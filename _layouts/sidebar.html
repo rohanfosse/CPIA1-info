@@ -15,9 +15,11 @@ layout: default
       
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb ms-3 mb-0">
+          {% if page.title != "Accueil" %}
           <li class="breadcrumb-item">
             <a href="{{ '/' | relative_url }}">Accueil</a>
           </li>
+          {% endif %}
           {% if page.section or page.section_id %}
           <li class="breadcrumb-item">{{ page.section | default: page.section_id }}</li>
           {% endif %}
