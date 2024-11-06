@@ -43,7 +43,7 @@ publication_year: 2024
 #
 # header-background: 
 # header-text-color: 
-breadcrumbs-background: #0f4c81
+breadcrumbs-background: rgb(15, 76, 129)
 # breadcrumbs-text-color: 
 # active-nav-color: 
 # link-color:
