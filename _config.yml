@@ -86,3 +86,5 @@ exclude: [README.md, LICENSE, assets/lib/README.md]
 # Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+      input: GFM
