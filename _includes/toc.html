@@ -14,13 +14,13 @@
                         {{ p.section_id }}
                         {% assign p_children = site.html_pages | where: 'section', p.section_id | sort: 'nav_order' %}
                         <ul>
-                            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> {% if p.topics %}<small>| topics: {{ p.topics }}</small>{% endif %}</li>
+                            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> </li>
                             {% for c in p_children %}
-                            <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a> {% if c.topics %}<small>| topics: {{ c.topics }}</small>{% endif %}</li>
+                            <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a> </li>
                             {% endfor %}
                         </ul>
                         {% else %}
-                        <a href="{{ p.url | relative_url }}">{{ p.title }}</a> {% if p.topics %}<small>| topics: {{ p.topics }}</small>{% endif %}
+                        <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
                         {% endif %}
                     </li>
                     {% endfor %}
