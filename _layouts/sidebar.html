@@ -21,7 +21,9 @@ layout: default
           {% if page.section or page.section_id %}
           <li class="breadcrumb-item">{{ page.section | default: page.section_id }}</li>
           {% endif %}
+          {% if page.title != "Accueil" %}
           <li class="breadcrumb-item" aria-current="page">{{ page.nav | default: page.title }}</li>
+          {% endif %}
         </ol>
       </nav>
 

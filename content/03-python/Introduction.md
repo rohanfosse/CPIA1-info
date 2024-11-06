@@ -1,5 +1,5 @@
 ---
-section_id: Flowgorithme
+section_id: Python
 nav_order: 3
 title: Introduction à Python
 topics: Python; Introduction

@@ -11,16 +11,16 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: CPIA1 24/25 - Enseignement Transversaux Scientifiques
+title: CPIA1 24/25 - Informatique
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
 title-icon: laptop
 # description appears in sidebar footer
-description: "Enseignement Transversaux Scientifiques - CPIA1 24/25"
+description: "Enseignement Transverses Scientifiques - CPIA1 24/25"
 # keywords for meta tags used by search engines
-keywords: "CPIA1, CESI, Enseignement, Transversaux, Scientifiques, Informatique, Montpellier"
+keywords: "CPIA1, CESI, Enseignement, Transverses, Scientifiques, Informatique, Montpellier"
 # image for meta tags, will appear when sharing link on social media
 featured-image: "/images/uidaho-workshop.jpg"
 
