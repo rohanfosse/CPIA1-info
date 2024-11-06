@@ -1,6 +1,6 @@
 ---
 section_id: Arduino
-nav_order: 1
+nav_order: 2
 title: Introduction à Arduino et Tinkercad
 topics: Arduino; Tinkercad; Électronique; Programmation
 ---
