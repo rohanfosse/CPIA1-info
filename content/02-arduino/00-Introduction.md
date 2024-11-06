@@ -39,7 +39,8 @@ Tinkercad est un outil en ligne gratuit de modélisation 3D et de simulation él
 
 **Exemple de code pour allumer une LED** :
 
-```cpp
+
+~~~cpp
 void setup() {
   pinMode(3, OUTPUT); // Configure la broche 3 comme sortie
 }
@@ -50,7 +51,8 @@ void loop() {
   digitalWrite(3, LOW);  // Éteint la LED
   delay(1000);           // Pause de 1 seconde
 }
-```
+~~~
+
 
 Ce code fait clignoter la LED toutes les secondes.
 
