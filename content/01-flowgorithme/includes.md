@@ -5,4 +5,4 @@ title: Introduction à l'algorithmique (Coming soon)
 topics: Flowgorithm; Algorithmique; Introduction
 ---
 
-{% include  alert.html content="This section is coming soon. Stay tuned!" type="warning" %}
+{% include  alert.html text="This section is coming soon. Stay tuned!" type="danger" %}
