@@ -1,5 +1,5 @@
 ---
-section_id: Arduino
+section: Arduino
 nav_order: 5
 title: Tableaux
 topics: Tableaux; Arduino; Arrays; Indexation

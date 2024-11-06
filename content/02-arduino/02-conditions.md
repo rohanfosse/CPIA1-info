@@ -1,5 +1,5 @@
 ---
-section_id: Arduino
+section: Arduino
 nav_order: 3
 title: Conditions
 topics: Conditions; Arduino; if; else; switch

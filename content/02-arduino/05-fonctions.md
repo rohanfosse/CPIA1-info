@@ -1,5 +1,5 @@
 ---
-section_id: Arduino
+section: Arduino
 nav_order: 6
 title: Fonctions
 topics: Fonctions; Arduino; Déclaration; Paramètres; Valeur de retour

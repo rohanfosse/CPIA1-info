@@ -1,5 +1,8 @@
-Bien sûr, je vais proposer une série d'exercices couvrant les notions de variables, conditions, boucles, tableaux et fonctions en Arduino. Les exercices iront du plus simple au plus complexe.
-
+---
+section: Arduino
+nav_order: 7
+title: Exercices Corrigés
+topics: Exercices; Arduino; Correction
 ---
 
 ### Exercice 1 : Manipulation de variables

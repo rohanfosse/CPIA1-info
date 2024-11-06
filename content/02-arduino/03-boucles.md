@@ -1,5 +1,5 @@
 ---
-section_id: Arduino
+section: Arduino
 nav_order: 4
 title: Boucles
 topics: Boucles; Arduino; for; while; do-while
