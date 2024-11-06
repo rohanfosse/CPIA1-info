@@ -5,11 +5,9 @@ title: Commandes de base Arduino
 topics: Commandes; Arduino; Digital; Analogique; Lecture; Écriture
 ---
 
-## Commandes de base en Arduino
-
 Les commandes de base en Arduino permettent de contrôler les composants et d'interagir avec les capteurs. Ce cours présente les principales commandes pour la manipulation des broches numériques et analogiques, les fonctions de base pour configurer les broches, lire des valeurs, écrire des valeurs, et utiliser les délais.
 
-### Configuration des broches avec `pinMode()`
+## Configuration des broches avec `pinMode()`
 
 La fonction `pinMode()` est utilisée pour configurer une broche en mode `INPUT` (entrée) ou `OUTPUT` (sortie). La configuration des broches est généralement faite dans la fonction `setup()`.
 
@@ -29,7 +27,7 @@ void setup() {
 }
 ```
 
-### Lecture numérique avec `digitalRead()`
+## Lecture numérique avec `digitalRead()`
 
 La fonction `digitalRead()` permet de lire l'état d'une broche configurée en `INPUT`. Elle retourne `HIGH` si la broche est à un niveau logique élevé (5V sur la plupart des Arduino) et `LOW` si elle est à un niveau logique bas (0V).
 
@@ -56,7 +54,7 @@ void loop() {
 
 Dans cet exemple, l’état du bouton est affiché dans le moniteur série.
 
-### Écriture numérique avec `digitalWrite()`
+## Écriture numérique avec `digitalWrite()`
 
 La fonction `digitalWrite()` permet de définir l'état d'une broche configurée en `OUTPUT`. On peut définir l'état à `HIGH` pour envoyer 5V (ou 3.3V sur certaines cartes) ou `LOW` pour envoyer 0V.
 
@@ -86,7 +84,7 @@ void loop() {
 
 Ce code fait clignoter la LED intégrée en l’allumant et l’éteignant chaque seconde.
 
-### Lecture analogique avec `analogRead()`
+## Lecture analogique avec `analogRead()`
 
 La fonction `analogRead()` lit la valeur d'une broche analogique (généralement `A0` à `A5` sur Arduino Uno). Elle retourne une valeur entre 0 (0V) et 1023 (5V), permettant de lire des valeurs de capteurs analogiques.
 
@@ -114,7 +112,7 @@ void loop() {
 
 Ce code lit la valeur du capteur analogique connecté à `A0` et l'affiche dans le moniteur série.
 
-### Écriture analogique avec `analogWrite()`
+## Écriture analogique avec `analogWrite()`
 
 La fonction `analogWrite()` permet de simuler une sortie analogique en utilisant le **PWM** (Pulse Width Modulation) sur certaines broches numériques (généralement marquées avec un symbole `~`). La valeur peut être réglée entre 0 (0V) et 255 (5V ou 3.3V).
 
@@ -144,7 +142,7 @@ void loop() {
 
 Ce code contrôle l'intensité lumineuse d'une LED connectée à la broche `9`.
 
-### Utilisation des délais avec `delay()`
+## Utilisation des délais avec `delay()`
 
 La fonction `delay()` provoque une pause dans l'exécution du programme pour une durée donnée (en millisecondes).
 
@@ -167,7 +165,7 @@ void loop() {
 }
 ```
 
-### `delayMicroseconds()` pour les pauses courtes
+## `delayMicroseconds()` pour les pauses courtes
 
 Si des pauses très courtes sont nécessaires, `delayMicroseconds()` permet d’attendre un nombre de microsecondes (1 microseconde = 0,001 milliseconde).
 
@@ -190,7 +188,7 @@ void loop() {
 
 Ce code fait clignoter la LED à une fréquence très rapide.
 
-### Résumé des commandes de base
+## Résumé des commandes de base
 
 | Commande             | Description                                                   |
 |----------------------|---------------------------------------------------------------|

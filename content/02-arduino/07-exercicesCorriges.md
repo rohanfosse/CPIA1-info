@@ -5,7 +5,7 @@ title: Exercices Corrigés
 topics: Exercices; Arduino; Correction
 ---
 
-### Exercice 1 : Manipulation de variables
+## Exercice 1 : Manipulation de variables
 
 **Objectif** : Se familiariser avec les types de variables et leur manipulation.
 
@@ -44,7 +44,7 @@ void loop() {
 
 ---
 
-### Exercice 2 : Condition simple pour contrôler une LED
+## Exercice 2 : Condition simple pour contrôler une LED
 
 **Objectif** : Utiliser une condition pour allumer ou éteindre une LED en fonction d’une variable.
 
@@ -72,7 +72,7 @@ void loop() {
 
 ---
 
-### Exercice 3 : Boucle pour faire clignoter une LED
+## Exercice 3 : Boucle pour faire clignoter une LED
 
 **Objectif** : Utiliser une boucle pour faire clignoter la LED plusieurs fois.
 
@@ -99,7 +99,7 @@ void loop() {
 
 ---
 
-### Exercice 4 : Stocker des valeurs de capteur dans un tableau
+## Exercice 4 : Stocker des valeurs de capteur dans un tableau
 
 **Objectif** : Utiliser un tableau pour stocker des lectures de capteur.
 
@@ -132,7 +132,7 @@ void loop() {
 
 ---
 
-### Exercice 5 : Calculer la moyenne des valeurs dans un tableau
+## Exercice 5 : Calculer la moyenne des valeurs dans un tableau
 
 **Objectif** : Calculer la moyenne des lectures dans un tableau.
 
@@ -173,7 +173,7 @@ float calculerMoyenne(int tableau[], int taille) {
 
 ---
 
-### Exercice 6 : Clignotement avec une fonction personnalisée
+## Exercice 6 : Clignotement avec une fonction personnalisée
 
 **Objectif** : Créer une fonction pour clignoter une LED avec un délai variable.
 
@@ -205,7 +205,7 @@ void clignoterLED(int delai) {
 
 ---
 
-### Exercice 7 : Mesurer et comparer les lectures de capteur
+## Exercice 7 : Mesurer et comparer les lectures de capteur
 
 **Objectif** : Utiliser une condition pour analyser plusieurs lectures d’un capteur.
 
@@ -238,7 +238,7 @@ void loop() {
 
 ---
 
-### Exercice 8 : Contrôler une LED avec un bouton et des fonctions
+## Exercice 8 : Contrôler une LED avec un bouton et des fonctions
 
 **Objectif** : Créer une fonction pour vérifier l’état d’un bouton et contrôler la LED.
 

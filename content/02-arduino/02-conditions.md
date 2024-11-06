@@ -5,11 +5,9 @@ title: Conditions
 topics: Conditions; Arduino; if; else; switch
 ---
 
-## Conditions en Arduino
-
 Les conditions permettent de contrôler le flux d'exécution d'un programme en fonction de certaines conditions ou valeurs. En Arduino, les conditions sont principalement utilisées avec les instructions `if`, `else if`, `else` et `switch`. Ces instructions permettent d'exécuter du code uniquement si certaines conditions sont remplies.
 
-### Structure de base des conditions
+## Structure de base des conditions
 
 La structure de base d'une condition `if` en Arduino est la suivante :
 
@@ -31,7 +29,7 @@ if (condition1) {
 }
 ```
 
-### Exemple de condition `if`
+## Exemple de condition `if`
 
 Voici un exemple d'utilisation d'une condition `if` en Arduino :
 
@@ -49,7 +47,7 @@ if (temperature > 30) {
 
 Dans cet exemple, le ventilateur s'allume seulement si la température dépasse 30.
 
-### Conditions avec `switch`
+## Conditions avec `switch`
 
 L'instruction `switch` est utilisée pour tester la valeur d'une variable contre plusieurs cas possibles. C'est une alternative efficace à plusieurs conditions `if` quand on doit comparer une variable à de nombreuses valeurs spécifiques.
 
@@ -69,7 +67,7 @@ switch (variable) {
 }
 ```
 
-### Exemple de condition `switch`
+## Exemple de condition `switch`
 
 Supposons que nous ayons une variable `mode` qui peut prendre plusieurs valeurs :
 
@@ -119,7 +117,7 @@ if (x > 10 && x < 20) {
 }
 ```
 
-### Exemple avec plusieurs conditions
+## Exemple avec plusieurs conditions
 
 Voici un exemple qui utilise plusieurs conditions logiques pour allumer une LED uniquement si deux conditions sont vraies :
 
