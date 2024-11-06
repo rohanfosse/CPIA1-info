@@ -75,9 +75,11 @@ Le **moniteur série** est un outil de l’IDE Arduino qui affiche les messages 
 **Commandes de base pour le moniteur série** :
 
 1. **Initialiser le moniteur série** :
-   ```cpp
+
+   ~~~cpp
    Serial.begin(9600); // Initialise le moniteur série à une vitesse de 9600 bauds
-   ```
+   ~~~
+
    - Cette commande est placée dans `setup()` et ouvre la communication série entre l'Arduino et l'ordinateur.
 
    ### Utilisation de `Serial.begin()` et communication série en Arduino
@@ -90,9 +92,9 @@ La commande `Serial.begin()` est essentielle pour utiliser le **moniteur série*
 
 **Syntaxe :**
 
-```cpp
+~~~cpp
 Serial.begin(9600); // Initialise la communication série à 9600 bauds
-```
+~~~
 
 ### Pourquoi utiliser `Serial.begin()` ?
 
@@ -106,7 +108,7 @@ Quand `Serial.begin()` est appelée dans le `setup()`, Arduino et l'ordinateur "
 
 Voici un petit programme qui utilise `Serial.begin()` pour afficher un message toutes les secondes :
 
-```cpp
+~~~cpp
 void setup() {
   Serial.begin(9600); // Initialise la communication série à 9600 bauds
 }
@@ -115,7 +117,7 @@ void loop() {
   Serial.println("Bonjour, Arduino communique !");
   delay(1000); // Pause de 1 seconde
 }
-```
+~~~
 
 ### Explication de la "vitesse" de transmission
 
@@ -123,23 +125,23 @@ La valeur `9600` dans `Serial.begin(9600);` est une fréquence qui indique le no
 
 
 2. **Envoyer un message au moniteur série** :
-   ```cpp
+   ~~~cpp
    Serial.print("Message");     // Affiche un message sans saut de ligne
    Serial.println("Message");   // Affiche un message avec saut de ligne
-   ```
+   ~~~
    - `print` affiche le texte sans sauter de ligne, tandis que `println` saute une ligne après le texte.
 
 3. **Lire des données du moniteur série** :
-   ```cpp
+   ~~~cpp
    if (Serial.available() > 0) { // Vérifie s'il y a des données à lire
      int data = Serial.read();   // Lit un octet de données
    }
-   ```
+   ~~~
    - Cette commande est utile pour recevoir des informations envoyées depuis l’ordinateur vers Arduino, comme des commandes ou des valeurs de capteurs.
 
 **Exemple d’utilisation** :
 
-```cpp
+~~~cpp
 void setup() {
   Serial.begin(9600); // Initialise le moniteur série
 }
@@ -148,27 +150,27 @@ void loop() {
   Serial.println("Arduino est prêt !");
   delay(1000); // Affiche le message toutes les secondes
 }
-```
+~~~
 
 ## Gestion des Délais et Chronométrage
 
 Pour créer des pauses ou vérifier des durées, Arduino propose des commandes spécifiques :
 
 1. **`delay()`** :
-   ```cpp
+   ~~~cpp
    delay(temps);
-   ```
+   ~~~
    - Fait une pause en millisecondes, où `temps` est le nombre de millisecondes (ex. : `delay(1000);` pour une pause de 1 seconde).
 
 2. **`millis()`** :
-   ```cpp
+   ~~~cpp
    unsigned long t = millis();
-   ```
+   ~~~
    - Retourne le nombre de millisecondes écoulées depuis le démarrage de la carte. Idéal pour chronométrer des durées sans bloquer le programme avec `delay()`.
 
 **Exemple avec `millis()`** :
 
-```cpp
+~~~cpp
 unsigned long previousMillis = 0; // Stocke le temps de la dernière mise à jour
 const long interval = 1000;       // Intervalle d'une seconde
 
@@ -184,7 +186,7 @@ void loop() {
     Serial.println("Une seconde s'est écoulée");
   }
 }
-```
+~~~
 
 ## Commandes pour les LEDs et autres composants de base
 
