@@ -45,8 +45,8 @@ publication_year: 2024
 # header-text-color: 
 breadcrumbs-background: RGB(146, 168, 209)
 # breadcrumbs-text-color: 
-# active-nav-color: 
-# link-color:
+active-nav-color: RGB(146, 168, 209)
+link-color: RGB(146, 168, 209)
 # next-button-color:
 # text-color: 
 # base-font-size:
@@ -85,3 +85,4 @@ defaults:
 exclude: [README.md, LICENSE, assets/lib/README.md]
 # Build settings
 markdown: kramdown
+highlighter: rouge
