@@ -1,7 +1,7 @@
 ---
 section: Arduino
-nav_order: 6
-title: Commandes de base
+nav_order: 7
+title: Commandes de base Arduino
 topics: Commandes; Arduino; Digital; Analogique; Lecture; Écriture
 ---
 

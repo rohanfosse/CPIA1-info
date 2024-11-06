@@ -1,6 +1,6 @@
 ---
-section_id: Arduino
-nav_order: 1
+section: Arduino
+nav_order: 2
 title: Variables
 topics: Variables; Arduino; Types; Declaration
 ---
