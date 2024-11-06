@@ -5,11 +5,9 @@ title: Introduction à Arduino et Tinkercad
 topics: Arduino; Tinkercad; Électronique; Programmation
 ---
 
-## Introduction à Arduino et Tinkercad
-
 Arduino est une plateforme de développement électronique open-source qui permet de créer des projets interactifs en combinant matériel et logiciel. Grâce à sa simplicité, Arduino est utilisé par des débutants en électronique et des experts pour des projets allant de simples montages à des systèmes avancés de domotique, de robotique et de prototypage. Ce cours introduit les bases de l'utilisation d'Arduino avec Tinkercad, un simulateur en ligne qui permet de tester des montages sans matériel.
 
-### Qu'est-ce qu'Arduino ?
+## Qu'est-ce qu'Arduino ?
 
 Arduino est une plateforme qui repose sur :
 1. **Une carte microcontrôleur** (comme l'Arduino Uno) qui exécute des programmes pour interagir avec des composants électroniques (capteurs, LED, moteurs).
@@ -17,7 +15,7 @@ Arduino est une plateforme qui repose sur :
 
 Les cartes Arduino peuvent être programmées pour lire des capteurs (comme la température), envoyer des signaux à des composants (comme des LED), ou même contrôler des objets plus complexes (comme des robots).
 
-### Qu'est-ce que Tinkercad ?
+## Qu'est-ce que Tinkercad ?
 
 Tinkercad est un outil en ligne gratuit de modélisation 3D et de simulation électronique. Dans Tinkercad, il est possible de :
 - Créer et simuler des circuits électroniques avec Arduino sans matériel.
@@ -58,7 +56,7 @@ Ce code fait clignoter la LED toutes les secondes.
 
 6. **Simuler le circuit** en cliquant sur "Démarrer la simulation".
 
-### Avantages de Tinkercad pour les débutants
+## Avantages de Tinkercad pour les débutants
 
 - **Sans matériel** : idéal pour découvrir l'électronique sans investir dans du matériel.
 - **Visualisation des circuits** : voir comment connecter des composants et simuler leur comportement.
@@ -70,7 +68,7 @@ Ce code fait clignoter la LED toutes les secondes.
 
 Arduino comprend certaines commandes de base pour le **moniteur série** (interface de communication) et la **gestion de programmes**.
 
-### Utiliser le Moniteur Série
+## Utiliser le Moniteur Série
 
 Le **moniteur série** est un outil de l’IDE Arduino qui affiche les messages envoyés depuis la carte, permettant de visualiser les données en temps réel (comme la lecture d’un capteur) ou d’afficher des informations pour déboguer le code.
 
@@ -82,11 +80,11 @@ Le **moniteur série** est un outil de l’IDE Arduino qui affiche les messages 
    ```
    - Cette commande est placée dans `setup()` et ouvre la communication série entre l'Arduino et l'ordinateur.
 
-   #### Utilisation de `Serial.begin()` et communication série en Arduino
+   ### Utilisation de `Serial.begin()` et communication série en Arduino
 
 La commande `Serial.begin()` est essentielle pour utiliser le **moniteur série** en Arduino, un outil qui permet à la carte Arduino de **communiquer avec un ordinateur**. Cette communication série est un canal de dialogue qui permet de **voir des messages** envoyés par Arduino ou de **recevoir des instructions** depuis l'ordinateur.
 
-#### Qu'est-ce que `Serial.begin()` ?
+### Qu'est-ce que `Serial.begin()` ?
 
 `Serial.begin(vitesse);` est une commande qui initialise la communication série entre Arduino et l'ordinateur. La **vitesse** est indiquée en bauds (ou "baud rate") et définit le nombre de bits transférés par seconde. En général, on utilise une vitesse de **9600 bauds** pour des projets simples, mais d'autres vitesses comme 115200 bauds peuvent être utilisées pour des projets plus rapides.
 
@@ -96,13 +94,13 @@ La commande `Serial.begin()` est essentielle pour utiliser le **moniteur série*
 Serial.begin(9600); // Initialise la communication série à 9600 bauds
 ```
 
-#### Pourquoi utiliser `Serial.begin()` ?
+### Pourquoi utiliser `Serial.begin()` ?
 
 1. **Pour afficher des messages** : Une fois `Serial.begin()` configuré, vous pouvez envoyer des messages au **moniteur série** de l’IDE Arduino (par exemple, pour afficher des valeurs de capteurs, des états de variables ou des messages de débogage).
 2. **Pour tester le code** : Le moniteur série vous permet de vérifier que les variables évoluent comme prévu ou que les conditions se déclenchent correctement.
 3. **Pour recevoir des données** : `Serial.begin()` permet aussi de recevoir des informations envoyées par l’ordinateur vers l’Arduino, comme des commandes d’action ou des valeurs de paramètres.
 
-#### Comment fonctionne la communication série ?
+### Comment fonctionne la communication série ?
 
 Quand `Serial.begin()` est appelée dans le `setup()`, Arduino et l'ordinateur "ouvrent un canal de dialogue". Par exemple, avec `Serial.print()` et `Serial.println()`, on peut envoyer des messages que l’on verra s’afficher dans le moniteur série. C'est comme un "chat" entre l'Arduino et l'ordinateur, mais avec des données et des messages de débogage !
 
@@ -119,7 +117,7 @@ void loop() {
 }
 ```
 
-#### Explication de la "vitesse" de transmission
+### Explication de la "vitesse" de transmission
 
 La valeur `9600` dans `Serial.begin(9600);` est une fréquence qui indique le nombre de bits échangés chaque seconde, appelée **baud rate**. La vitesse courante de 9600 bauds est généralement suffisante pour transmettre des informations simples (texte, valeurs de capteurs), mais on peut ajuster cette vitesse selon les besoins.
 
@@ -152,7 +150,7 @@ void loop() {
 }
 ```
 
-### Gestion des Délais et Chronométrage
+## Gestion des Délais et Chronométrage
 
 Pour créer des pauses ou vérifier des durées, Arduino propose des commandes spécifiques :
 
@@ -188,7 +186,7 @@ void loop() {
 }
 ```
 
-### Commandes pour les LEDs et autres composants de base
+## Commandes pour les LEDs et autres composants de base
 
 Ces commandes permettent de contrôler des composants simples comme les LED, les boutons et les capteurs.
 
@@ -202,7 +200,7 @@ Ces commandes permettent de contrôler des composants simples comme les LED, les
 
 ---
 
-### Résumé des commandes de base
+## Résumé des commandes de base
 
 | Commande                | Description                                    |
 |-------------------------|------------------------------------------------|
@@ -215,5 +213,3 @@ Ces commandes permettent de contrôler des composants simples comme les LED, les
 | `digitalWrite()`        | Modifie l’état d’une broche numérique          |
 | `analogRead()`          | Lit une valeur sur une broche analogique       |
 | `analogWrite()`         | Envoie un signal PWM sur une broche            |
-
----

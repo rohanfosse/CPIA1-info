@@ -5,9 +5,6 @@ title: Variables
 topics: Variables; Arduino; Types; Declaration
 ---
 
-
-## Declaration des variables en Arduino
-
 Les variables sont des espaces de mémoire qui stockent des valeurs. En Arduino, les variables sont déclarées en fonction de leur type et de leur nom. Les types de variables les plus courants sont les entiers, les décimaux et les caractères.
 
 Voici un tableau récapitulatif des types de variables les plus courants en Arduino :
