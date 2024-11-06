@@ -14,7 +14,7 @@
                         {{ p.section_id }}
                         {% assign p_children = site.html_pages | where: 'section', p.section_id | sort: 'nav_order' %}
                         <ul>
-                            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> </li>
+                            <li><b><a href="{{ p.url | relative_url }}">{{ p.title }}</a></b> </li>
                             {% for c in p_children %}
                             <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a> </li>
                             {% endfor %}
