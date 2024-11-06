@@ -16,11 +16,11 @@ title: CPIA1 24/25 - Enseignement Transversaux Scientifiques
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
-title-icon: code-slash
+title-icon: laptop
 # description appears in sidebar footer
-description: ""
+description: "Enseignement Transversaux Scientifiques - CPIA1 24/25"
 # keywords for meta tags used by search engines
-keywords: "workshops, websites, gh-pages, jekyll"
+keywords: "CPIA1, CESI, Enseignement, Transversaux, Scientifiques, Informatique, Montpellier"
 # image for meta tags, will appear when sharing link on social media
 featured-image: "/images/uidaho-workshop.jpg"
 
@@ -43,7 +43,7 @@ publication_year: 2024
 #
 # header-background: 
 # header-text-color: 
-# breadcrumbs-background: 
+breadcrumbs-background: #0f4c81
 # breadcrumbs-text-color: 
 # active-nav-color: 
 # link-color:
