@@ -5,7 +5,7 @@
     <div class="m-3 col-md-8" >
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title h3">Table des matières</h2>
+                <h2 class="card-title h3 text-center">Table des matières</h2>
                 <ul>
                     {% assign nav_pages = site.html_pages | where_exp: 'p','p.nav_order' | where_exp: 'p', 'p.section == nil' | sort: 'nav_order' %}
                     {% for p in nav_pages %}
@@ -14,7 +14,7 @@
                         {{ p.section_id }}
                         {% assign p_children = site.html_pages | where: 'section', p.section_id | sort: 'nav_order' %}
                         <ul>
-                            <li><b><a href="{{ p.url | relative_url }}">{{ p.title }}</a></b> </li>
+                            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
                             {% for c in p_children %}
                             <li><a href="{{ c.url | relative_url }}">{{ c.title }}</a> </li>
                             {% endfor %}
