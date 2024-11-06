@@ -1,16 +1,8 @@
 ---
-title: Lesson Template
+title: Accueil
 layout: lesson-content
 ---
 
-A minimal Jekyll theme with sidebar content nav for creating lesson and workshop websites using Markdown.
-
-*Add your workshop abstract here!*
-
-Learn how to create a super quick easy website for a workshop by writing a few markdown files! 
-Host it for free on GitHub with gh-pages, and share!
-Fun!
+Bienvenue sur le site dédié aux ETS des CPIA1 du CESI de Montpellier. Ce site a pour but de vous accompagner dans votre apprentissage de la programmation en vous proposant des cours et des exercices.
 
 {% include toc.html %}
-
-{% include template/credits.html %}
