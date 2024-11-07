@@ -11,15 +11,15 @@ Les conditions permettent de contrôler le flux d'exécution d'un programme en f
 
 La structure de base d'une condition `if` en Arduino est la suivante :
 
-```cpp
+<pre><code class="language-cpp">
 if (condition) {
   // Code à exécuter si la condition est vraie
 }
-```
+</code></pre>
 
 Pour ajouter des options supplémentaires, on peut utiliser `else if` et `else` :
 
-```cpp
+<pre><code class="language-cpp">
 if (condition1) {
   // Code si condition1 est vraie
 } else if (condition2) {
@@ -27,13 +27,13 @@ if (condition1) {
 } else {
   // Code si toutes les conditions précédentes sont fausses
 }
-```
+</code></pre>
 
 ## Exemple de condition `if`
 
 Voici un exemple d'utilisation d'une condition `if` en Arduino :
 
-```cpp
+<pre><code class="language-cpp">
 int temperature = 25;
 
 if (temperature > 30) {
@@ -43,7 +43,7 @@ if (temperature > 30) {
   // Sinon, éteindre le ventilateur
   digitalWrite(ventilateur, LOW);
 }
-```
+</code></pre>
 
 Dans cet exemple, le ventilateur s'allume seulement si la température dépasse 30.
 
@@ -53,7 +53,7 @@ L'instruction `switch` est utilisée pour tester la valeur d'une variable contre
 
 Voici la structure de base d'un `switch` en Arduino :
 
-```cpp
+<pre><code class="language-cpp">
 switch (variable) {
   case valeur1:
     // Code si variable == valeur1
@@ -65,13 +65,13 @@ switch (variable) {
     // Code si aucun des cas précédents n'est satisfait
     break;
 }
-```
+</code></pre>
 
 ## Exemple de condition `switch`
 
 Supposons que nous ayons une variable `mode` qui peut prendre plusieurs valeurs :
 
-```cpp
+<pre><code class="language-cpp">
 int mode = 2;
 
 switch (mode) {
@@ -89,7 +89,7 @@ switch (mode) {
     digitalWrite(LED2, LOW);
     break;
 }
-```
+</code></pre>
 
 Dans cet exemple, la LED correspondante s'allume selon la valeur de `mode`.
 
@@ -111,17 +111,17 @@ Les conditions utilisent des opérateurs de comparaison et logiques pour évalue
 
 Par exemple, pour tester si une variable `x` est entre 10 et 20 :
 
-```cpp
+<pre><code class="language-cpp">
 if (x > 10 && x < 20) {
   // Code à exécuter si x est entre 10 et 20
 }
-```
+</code></pre>
 
 ## Exemple avec plusieurs conditions
 
 Voici un exemple qui utilise plusieurs conditions logiques pour allumer une LED uniquement si deux conditions sont vraies :
 
-```cpp
+<pre><code class="language-cpp">
 int temperature = 28;
 int humidite = 70;
 
@@ -132,7 +132,7 @@ if (temperature > 25 && humidite > 60) {
   // Éteindre la LED sinon
   digitalWrite(LED, LOW);
 }
-```
+</code></pre>
 
 Dans cet exemple, la LED s'allume seulement si les deux conditions sont vraies.
 
@@ -140,7 +140,7 @@ Dans cet exemple, la LED s'allume seulement si les deux conditions sont vraies.
 
 Les variables de type `bool` peuvent être utilisées pour simplifier les conditions complexes. Par exemple :
 
-```cpp
+<pre><code class="language-cpp">
 bool estChaud = temperature > 25;
 bool estHumide = humidite > 60;
 
@@ -149,6 +149,6 @@ if (estChaud && estHumide) {
 } else {
   digitalWrite(LED, LOW);
 }
-```
+</code></pre>
 
 Dans cet exemple, les variables `estChaud` et `estHumide` facilitent la compréhension de la condition.
