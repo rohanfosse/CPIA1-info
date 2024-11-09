@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 6
 title: Structures de Données
 topics: Listes; Tuples; Dictionnaires; Ensembles; Manipulation de données

@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 4
 title: Conditions et Boucles
 topics: Conditions; Boucles; Instructions conditionnelles; Boucles `for` et `while`

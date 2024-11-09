@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 7
 title: Exercices Corrigés
 topics: Exercices; Solutions; Variables; Conditions; Boucles; Fonctions; Collections de données

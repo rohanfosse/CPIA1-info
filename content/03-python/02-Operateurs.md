@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 3
 title: Opérateurs et Expressions
 topics: Opérateurs; Calculs; Comparaisons; Expressions

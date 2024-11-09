@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 5
 title: Fonctions
 topics: Fonctions; Arguments; Valeurs de retour; Portée des variables

@@ -1,5 +1,5 @@
 ---
-section_id: Corbeille d'exercices
+section: Corbeille d'exercices
 nav_order: 3
 title: Python
 topics: Python; Exercices

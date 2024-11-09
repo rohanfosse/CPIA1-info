@@ -1,5 +1,5 @@
 ---
-section_id: Python
+section: Python
 nav_order: 2
 title: Types de Données et Variables
 topics: Variables; Types de données; Opérations; Conversion de types
