@@ -1,7 +1,7 @@
 ---
-section_id: Python
-nav_order: 3
-title: Introduction à Python
+section_id: Corbeille d'exercices
+nav_order: 4
+title: Flowgorithme
 topics: Python; Introduction
 ---
 
