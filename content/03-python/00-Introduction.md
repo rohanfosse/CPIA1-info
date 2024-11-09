@@ -1,6 +1,6 @@
 ---
 section_id: Python
-nav_order: 1
+nav_order: 3
 title: Introduction à Python
 topics: Python; Programmation; Installation; Syntaxe de base
 ---
