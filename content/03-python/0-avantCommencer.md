@@ -132,9 +132,9 @@ Voici un exemple de la recherche de Jupyter dans les extensions de VSCode :
    - Recherchez et sélectionnez **Python: Select Interpreter**.
    - Choisissez l'installation de Python 3.11.
 
-<img src="images/vscode-interpreteur-1.png" alt="drawing" width="800"/>
+<img src="images/vscode-interpreteur-1.png" alt="drawing" width="900"/>
 
-<img src="images/vscode-interpreteur-2.png" alt="drawing" width="800"/>
+<img src="images/vscode-interpreteur-2.png" alt="drawing" width="900"/>
 
 
 
@@ -142,7 +142,9 @@ Voici un exemple de la recherche de Jupyter dans les extensions de VSCode :
 4. **Exécuter le code** :
    - Méthode 1 : Cliquez sur le bouton **Exécuter** (icône ▶) en haut à droite de VSCode.
 
-   ![alt text](images/vscode-run.png)
+<img src="images/vscode-run.png" alt="drawing" width="900"/>
+
+   - Méthode 2 : Appuyez sur `F5` pour exécuter le script.
 
 ---
 
@@ -162,6 +164,6 @@ Voici un exemple de la recherche de Jupyter dans les extensions de VSCode :
    - Cliquez sur **▶** à gauche de la cellule pour exécuter.
    
 
-![alt text](images/vscode-jupyter.png)
+<img src="images/vscode-jupyter.png" alt="drawing" width="900"/>
 
 ---
