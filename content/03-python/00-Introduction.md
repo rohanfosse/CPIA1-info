@@ -1,10 +1,9 @@
 ---
-section_id: Python
-nav_order: 3
-title: Introduction à Python
-topics: Python; Programmation; Installation; Syntaxe de base
+section: Python
+nav_order: 2
+title: Types de Données et Variables
+topics: Variables; Types de données; Opérations; Conversion de types
 ---
-
 Python est un langage de programmation polyvalent et accessible, utilisé pour développer des applications web, des analyses de données, de l’intelligence artificielle, et bien plus encore. Grâce à sa syntaxe simple et lisible, Python est un excellent choix pour les débutants tout en restant puissant pour les experts. Ce cours introduit les bases de l’utilisation de Python, de l’installation aux premières lignes de code.
 
 ## Qu'est-ce que Python ?
