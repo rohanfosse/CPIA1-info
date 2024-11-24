@@ -11,7 +11,7 @@ Python est un langage de programmation puissant, simple à apprendre et largemen
 
 ## Installation de Python
 
-### Installation de Python sur Windows
+#### Installation de Python sur Windows
 
 1. **Téléchargement** :
    - Rendez-vous sur le site officiel de Python à cette adresse : [Télécharger Python pour Windows](https://www.python.org/downloads/).
@@ -32,7 +32,7 @@ Python est un langage de programmation puissant, simple à apprendre et largemen
 
 ---
 
-### Installation de Python sur macOS
+#### Installation de Python sur macOS
 
 1. **Téléchargement et installation** :
    - macOS inclut souvent une version de Python préinstallée, mais elle est généralement obsolète. Il est recommandé d’installer la dernière version de Python 3.11 depuis le site officiel.
@@ -71,13 +71,13 @@ Python est un langage de programmation puissant, simple à apprendre et largemen
 
 ## Installation de vsCode
 
-### Pourquoi utiliser VSCode et l'importance d'un environnement de développement
+#### Pourquoi utiliser VSCode et l'importance d'un environnement de développement
 
 Un environnement de développement comme **Visual Studio Code (VSCode)** facilite l'écriture, l'exécution et le débogage du code grâce à des outils intégrés et une interface intuitive. Il est particulièrement adapté aux débutants grâce à sa simplicité et à ses nombreuses extensions personnalisables.
 
 ---
 
-### Installation de Visual Studio Code
+#### Installation de Visual Studio Code
 
 1. **Téléchargement** :
    - Rendez-vous sur le site officiel : [Télécharger VSCode](https://code.visualstudio.com/).
@@ -93,7 +93,7 @@ Un environnement de développement comme **Visual Studio Code (VSCode)** facilit
 
 ---
 
-###  Installation de l’extension Jupyter et Python
+####  Installation de l’extension Jupyter et Python
 
 1. **Ouvrir le gestionnaire d’extensions** :
    - Dans VSCode, cliquez sur l'onglet **Extensions** (icône des 4 carrés dans la barre latérale gauche ou `Ctrl+Shift+X`).
@@ -106,11 +106,16 @@ Un environnement de développement comme **Visual Studio Code (VSCode)** facilit
    - Recherchez "Jupyter".
    - Installez l'extension officielle **Jupyter** (développée par Microsoft).
 
+
+Voici un exemple de la recherche de Jupyter dans les extensions de VSCode :
+
+![Recherche de l'extension Jupyter](images/vscode-extention.png)
+
 ---
 
 ## Utilisation de Python dans VSCode
 
-### Comment lancer un code Python avec VSCode
+#### Comment lancer un code Python avec VSCode
 
 1. **Créer un fichier Python** :
    - Cliquez sur **File > New File** et sauvegardez-le avec l’extension `.py` (par exemple, `example.py`).
@@ -119,11 +124,7 @@ Un environnement de développement comme **Visual Studio Code (VSCode)** facilit
    Ajoutez ce code simple dans le fichier :
    ```python
    # Exemple de script Python
-   def salutation(nom):
-       return f"Bonjour, {nom} !"
-
-   nom_utilisateur = input("Entrez votre nom : ")
-   print(salutation(nom_utilisateur))
+    print("Hello, World!")
    ```
 
 3. **Choisir l’interpréteur Python** :
@@ -131,16 +132,19 @@ Un environnement de développement comme **Visual Studio Code (VSCode)** facilit
    - Recherchez et sélectionnez **Python: Select Interpreter**.
    - Choisissez l'installation de Python 3.11.
 
+   ![alt text](images/vscode-interpreteur-1.png)
+
+   ![alt text](images/vscode-interpreteur-2.png)
+
+
 4. **Exécuter le code** :
    - Méthode 1 : Cliquez sur le bouton **Exécuter** (icône ▶) en haut à droite de VSCode.
-   - Méthode 2 : Ouvrez le terminal intégré (`Ctrl+`) et tapez :
-     ```bash
-     python example.py
-     ```
+
+   ![alt text](images/vscode-run.png)
 
 ---
 
-### Lancer un notebook Jupyter dans VSCode
+#### Lancer un notebook Jupyter dans VSCode
 
 1. **Créer un fichier Jupyter Notebook** :
    - Sauvegardez un nouveau fichier avec l’extension `.ipynb` (par exemple, `example.ipynb`).
@@ -151,8 +155,11 @@ Un environnement de développement comme **Visual Studio Code (VSCode)** facilit
      ```python
      rayon = 5
      aire = 3.14 * rayon**2
-     f"L'aire d'un cercle de rayon {rayon} est {aire:.2f}"
+     print(aire)
      ```
    - Cliquez sur **▶** à gauche de la cellule pour exécuter.
+   
+
+![alt text](images/vscode-jupyter.png)
 
 ---
