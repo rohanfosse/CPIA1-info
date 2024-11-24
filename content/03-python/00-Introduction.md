@@ -1,43 +1,8 @@
 ---
 section: Python
 nav_order: 2
-title: Types de Données et Variables
+title: Commencer avec Python
 topics: Variables; Types de données; Opérations; Conversion de types
----
-Python est un langage de programmation polyvalent et accessible, utilisé pour développer des applications web, des analyses de données, de l’intelligence artificielle, et bien plus encore. Grâce à sa syntaxe simple et lisible, Python est un excellent choix pour les débutants tout en restant puissant pour les experts. Ce cours introduit les bases de l’utilisation de Python, de l’installation aux premières lignes de code.
-
-## Qu'est-ce que Python ?
-
-Python est un langage de programmation caractérisé par :
-1. **Une syntaxe simple et intuitive** : Sa syntaxe repose sur l’indentation, facilitant la lecture et l’organisation du code.
-2. **Un environnement riche en bibliothèques** : Python dispose de nombreuses bibliothèques qui permettent de faire du développement web, du traitement d'images, des analyses de données, etc.
-3. **Une grande communauté** : Avec une vaste communauté d’utilisateurs, Python dispose de nombreux supports, forums, et documentation pour accompagner les développeurs de tout niveau.
-
-## Installation de Python
-
-Pour programmer en Python, vous aurez besoin de :
-1. **Installer Python** : Rendez-vous sur [python.org](https://www.python.org/downloads/) pour télécharger la dernière version de Python, compatible avec votre système d'exploitation.
-2. **Choisir un éditeur de code** : Python peut être utilisé dans plusieurs environnements, mais **Jupyter Notebook** et **VS Code** sont recommandés pour débuter.
-
-**Liens de téléchargement** :
-- Python : [python.org](https://www.python.org/downloads/)
-- Jupyter Notebook : [jupyter.org](https://jupyter.org/install)
-- VS Code : [code.visualstudio.com](https://code.visualstudio.com/)
-
----
-
-## Votre premier programme Python
-
-1. **Ouvrir un éditeur de code** : Lancez l’éditeur que vous avez choisi (Jupyter Notebook ou VS Code).
-2. **Créer un nouveau fichier Python** : Sauvegardez-le avec une extension `.py` pour les programmes Python.
-3. **Écrire un code simple** pour afficher un message dans la console :
-
-   ```python
-   print("Bonjour, Python !")
-   ```
-
-4. **Exécuter le code** : Dans un terminal ou une console de votre éditeur, exécutez le programme pour voir le message s’afficher.
-
 ---
 
 ## La Syntaxe de base en Python

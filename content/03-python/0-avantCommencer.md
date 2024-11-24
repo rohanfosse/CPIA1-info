@@ -1,7 +1,7 @@
 ---
 section_id: Python
 nav_order: 3
-title: Avant de Commencer - Mise en place de Pytho
+title: Installation de Python et VSCode
 topics: Python; Programmation; Installation; Syntaxe de base
 ---
 
