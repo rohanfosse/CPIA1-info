@@ -37,6 +37,7 @@ Tinkercad est un outil en ligne gratuit de modélisation 3D et de simulation él
 
 **Exemple de code pour allumer une LED** :
 
+
 <pre><code class="language-cpp">void setup() {
   pinMode(3, OUTPUT); // Configure la broche 3 comme sortie
 }
@@ -74,13 +75,13 @@ Le **moniteur série** est un outil de l’IDE Arduino qui affiche les messages 
 
 1. **Initialiser le moniteur série** :
 
-   <pre><code class="language-cpp">
+   ~~~cpp
    Serial.begin(9600); // Initialise le moniteur série à une vitesse de 9600 bauds
-   </code></pre>
+   ~~~
 
    - Cette commande est placée dans `setup()` et ouvre la communication série entre l'Arduino et l'ordinateur.
 
-   ### Utilisation de `Serial.begin()` et communication série en Arduino
+### Utilisation de `Serial.begin()` et communication série en Arduino
 
 La commande `Serial.begin()` est essentielle pour utiliser le **moniteur série** en Arduino, un outil qui permet à la carte Arduino de **communiquer avec un ordinateur**. Cette communication série est un canal de dialogue qui permet de **voir des messages** envoyés par Arduino ou de **recevoir des instructions** depuis l'ordinateur.
 
@@ -90,9 +91,9 @@ La commande `Serial.begin()` est essentielle pour utiliser le **moniteur série*
 
 **Syntaxe :**
 
-<pre><code class="language-cpp">
+~~~cpp
 Serial.begin(9600); // Initialise la communication série à 9600 bauds
-</code></pre>
+~~~
 
 ### Pourquoi utiliser `Serial.begin()` ?
 
@@ -106,7 +107,7 @@ Quand `Serial.begin()` est appelée dans le `setup()`, Arduino et l'ordinateur "
 
 Voici un petit programme qui utilise `Serial.begin()` pour afficher un message toutes les secondes :
 
-<pre><code class="language-cpp">
+~~~cpp
 void setup() {
   Serial.begin(9600); // Initialise la communication série à 9600 bauds
 }
@@ -115,7 +116,7 @@ void loop() {
   Serial.println("Bonjour, Arduino communique !");
   delay(1000); // Pause de 1 seconde
 }
-</code></pre>
+~~~
 
 ### Explication de la "vitesse" de transmission
 
@@ -123,23 +124,23 @@ La valeur `9600` dans `Serial.begin(9600);` est une fréquence qui indique le no
 
 
 2. **Envoyer un message au moniteur série** :
-   <pre><code class="language-cpp">
+   ~~~cpp
    Serial.print("Message");     // Affiche un message sans saut de ligne
    Serial.println("Message");   // Affiche un message avec saut de ligne
-   </code></pre>
+   ~~~
    - `print` affiche le texte sans sauter de ligne, tandis que `println` saute une ligne après le texte.
 
 3. **Lire des données du moniteur série** :
-   <pre><code class="language-cpp">
+   ~~~cpp
    if (Serial.available() > 0) { // Vérifie s'il y a des données à lire
      int data = Serial.read();   // Lit un octet de données
    }
-   </code></pre>
+   ~~~
    - Cette commande est utile pour recevoir des informations envoyées depuis l’ordinateur vers Arduino, comme des commandes ou des valeurs de capteurs.
 
 **Exemple d’utilisation** :
 
-<pre><code class="language-cpp">
+~~~cpp
 void setup() {
   Serial.begin(9600); // Initialise le moniteur série
 }
@@ -148,27 +149,27 @@ void loop() {
   Serial.println("Arduino est prêt !");
   delay(1000); // Affiche le message toutes les secondes
 }
-</code></pre>
+~~~
 
 ## Gestion des Délais et Chronométrage
 
 Pour créer des pauses ou vérifier des durées, Arduino propose des commandes spécifiques :
 
 1. **`delay()`** :
-   <pre><code class="language-cpp">
+   ~~~cpp
    delay(temps);
-   </code></pre>
+   ~~~
    - Fait une pause en millisecondes, où `temps` est le nombre de millisecondes (ex. : `delay(1000);` pour une pause de 1 seconde).
 
 2. **`millis()`** :
-   <pre><code class="language-cpp">
+   ~~~cpp
    unsigned long t = millis();
-   </code></pre>
+   ~~~
    - Retourne le nombre de millisecondes écoulées depuis le démarrage de la carte. Idéal pour chronométrer des durées sans bloquer le programme avec `delay()`.
 
 **Exemple avec `millis()`** :
 
-<pre><code class="language-cpp">
+~~~cpp
 unsigned long previousMillis = 0; // Stocke le temps de la dernière mise à jour
 const long interval = 1000;       // Intervalle d'une seconde
 
@@ -184,7 +185,7 @@ void loop() {
     Serial.println("Une seconde s'est écoulée");
   }
 }
-</code></pre>
+~~~
 
 ## Commandes pour les LEDs et autres composants de base
 
