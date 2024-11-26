@@ -5,15 +5,21 @@ title: EI Blanc Excel
 topics: Excel
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+
 ### **Contexte**
 
 Dans cette étude, nous modélisons la consommation horaire cumulée $ C(t) $ d’un bâtiment en fonction de plusieurs paramètres. L’objectif est d’analyser cette consommation, identifier les moments où elle dépasse 50 % de sa valeur maximale, et visualiser les données de manière pertinente.
 
 L'équation récurrente utilisée est la suivante :
 
-\[
+$$
 C(t+1) = C(t) + \Delta t \times \left(P*{base} + N(t) \cdot P*{moyen} + T(t) \cdot k_T + A(t) \cdot k_A \right)
-\]
+$$
 
 ---
 
@@ -81,7 +87,3 @@ Vous devez réaliser les étapes suivantes dans Excel :
 3. **Analyse supplémentaire** :
    - Affichez la proportion de "Oui" par rapport à la durée totale (en pourcentage) dans une cellule distincte.
    - Indiquez si le bâtiment dépasse 50 % de sa consommation maximale sur plus de la moitié de la journée.
-
-<script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
