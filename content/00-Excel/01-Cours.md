@@ -5,6 +5,12 @@ title: Cours Excel
 topics: Excel, Étude de Cas
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+
 Ce cours est conçu pour vous apprendre les bases nécessaires pour structurer, analyser et modéliser des données efficacement dans Excel. Nous couvrirons :
 
 1. Organisation et structuration des données.

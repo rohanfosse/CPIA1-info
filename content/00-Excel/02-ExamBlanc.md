@@ -10,7 +10,6 @@ topics: Excel
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
 
-
 ### **Contexte**
 
 Dans cette étude, nous modélisons la consommation horaire cumulée $ C(t) $ d’un bâtiment en fonction de plusieurs paramètres. L’objectif est d’analyser cette consommation, identifier les moments où elle dépasse 50 % de sa valeur maximale, et visualiser les données de manière pertinente.
@@ -33,18 +32,18 @@ Les paramètres suivants doivent être fixés dans votre fichier Excel (colonne 
 
 | **Paramètre**    | **Valeur par défaut** | **Description**                         |
 | ---------------- | --------------------- | --------------------------------------- |
-| $ C_0 $        | 0                     | Consommation initiale à $ t = 0 $.    |
-| $ P\_{base} $  | 200                   | Consommation minimale des équipements.  |
-| $ P\_{moyen} $ | 50                    | Consommation moyenne par personne.      |
-| $ k_T $        | 5                     | Impact de la température extérieure.    |
-| $ k_A $        | 100                   | Impact énergétique d’un pic d’activité. |
-| $ \Delta t $   | 1                     | Intervalle de temps constant (1 heure). |
+| $C_0$        | 0                     | Consommation initiale à $ t = 0 $.    |
+| $P\_{base}$  | 200                   | Consommation minimale des équipements.  |
+| $P\_{moyen}$ | 50                    | Consommation moyenne par personne.      |
+| $k_T$        | 5                     | Impact de la température extérieure.    |
+| $k_A$        | 100                   | Impact énergétique d’un pic d’activité. |
+| $\Delta t$   | 1                     | Intervalle de temps constant (1 heure). |
 
 #### **Données mesurées**
 
-- **$ N(t) $** : nombre de personnes présentes par heure.
-- **$ T(t) $** : température extérieure (en °C).
-- **$ A(t) $** : activité spécifique (0 ou 1).
+- $N(t)$ : nombre de personnes présentes par heure.
+- $T(t)$ : température extérieure (en °C).
+- $A(t)$ : activité spécifique (0 ou 1).
 
 
 ### **Objectifs et Étapes**
