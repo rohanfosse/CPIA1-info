@@ -5,9 +5,6 @@ title: EI Blanc Excel
 topics: Excel
 ---
 
-## **Étude de Cas Excel – Épreuve Initiale**
-
-
 ### **Contexte**
 
 Dans cette étude, nous modélisons la consommation horaire cumulée $ C(t) $ d’un bâtiment en fonction de plusieurs paramètres. L’objectif est d’analyser cette consommation, identifier les moments où elle dépasse 50 % de sa valeur maximale, et visualiser les données de manière pertinente.
@@ -42,26 +39,22 @@ Les paramètres suivants doivent être fixés dans votre fichier Excel (colonne 
 - **$ T(t) $** : température extérieure (en °C).
 - **$ A(t) $** : activité spécifique (0 ou 1).
 
----
 
 ### **Objectifs et Étapes**
 
 Vous devez réaliser les étapes suivantes dans Excel :
 
----
 
 #### **1. Fixer les paramètres dans des cellules** _(2 points)_
 
 1. Placez les paramètres ci-dessus dans une zone dédiée de votre feuille Excel.
 
----
 
 #### **2. Ajouter une colonne $ C(t) $ en fonction de l’équation et des paramètres fixés** _(6 points)_
 
 1. Créez une colonne `C(t)` dans l’onglet **Data** à côté des données mesurées.
 2. Implémentez l’équation récurrente pour calculer $ C(t) $ à chaque instant $ t $, en utilisant les paramètres fixés.
 
----
 
 #### **3. Vérification et Analyse** _(6 points)_
 
@@ -72,8 +65,6 @@ Vous devez réaliser les étapes suivantes dans Excel :
 2. **Vérification avec "Oui" ou "Non"** :
    - Ajoutez une colonne intitulée `Vérification`.
    - Remplissez cette colonne avec une condition : si $ C(t) $ est inférieur à 50 % de la valeur maximale, affichez "Non". Sinon, affichez "Oui".
-
----
 
 #### **4. Visualisation Graphique et Analyse Supplémentaire** _(6 points)_
 
@@ -89,5 +80,3 @@ Vous devez réaliser les étapes suivantes dans Excel :
 3. **Analyse supplémentaire** :
    - Affichez la proportion de "Oui" par rapport à la durée totale (en pourcentage) dans une cellule distincte.
    - Indiquez si le bâtiment dépasse 50 % de sa consommation maximale sur plus de la moitié de la journée.
-
----
