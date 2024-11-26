@@ -11,8 +11,9 @@ Dans cette étude, nous modélisons la consommation horaire cumulée $ C(t) $ d�
 
 L'équation récurrente utilisée est la suivante :
 
-$$C(t+1) = C(t) + \Delta t \times \left(P*{base} + N(t) \cdot P*{moyen} + T(t) \cdot k_T + A(t) \cdot k_A \right)$$
-
+```latex
+C(t+1) = C(t) + \Delta t \times \left(P*{base} + N(t) \cdot P*{moyen} + T(t) \cdot k_T + A(t) \cdot k_A \right)
+```
 
 ---
 
