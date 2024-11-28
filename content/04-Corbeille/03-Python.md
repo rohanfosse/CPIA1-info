@@ -1,7 +1,7 @@
 ---
 section: Corbeille d'exercices
 nav_order: 3
-title: Python
+title: Corbeille d'exercices de Python
 topics: Python; Exercices
 ---
 
@@ -14,7 +14,7 @@ try:
 except ValueError:
     print('Veuillez entrer des nombres valides.')
 ```
-# Le bloc `try-except` vérifie si l'entrée est un entier et gère les erreurs si l'utilisateur entre autre chose.
+Le bloc `try-except` vérifie si l'entrée est un entier et gère les erreurs si l'utilisateur entre autre chose.
 " %}
 
 ---
@@ -25,7 +25,7 @@ n = int(input('Entrez un nombre pour afficher sa table de multiplication : '))
 for i in range(1, 11):  # Boucle de 1 à 10
     print(f'{n} x {i} = {n * i}')
 ```
-# La boucle `for` parcourt chaque valeur de 1 à 10 et calcule le produit en temps réel.
+La boucle `for` parcourt chaque valeur de 1 à 10 et calcule le produit en temps réel.
 " %}
 
 ---
@@ -39,7 +39,7 @@ if mot in phrase:
 else:
     print('Le mot est absent.')
 ```
-# L'opérateur `in` permet de vérifier facilement si un mot est dans une phrase.
+L'opérateur `in` permet de vérifier facilement si un mot est dans une phrase.
 " %}
 
 ---
@@ -86,7 +86,7 @@ while True:
     else:
         print('Option invalide.')
 ```
-# Le programme utilise un dictionnaire pour stocker les contacts et un menu interactif pour naviguer.
+Le programme utilise un dictionnaire pour stocker les contacts et un menu interactif pour naviguer.
 " %}
 
 ---
@@ -98,7 +98,7 @@ nombres = [int(x) for x in nombres]
 print('Tri croissant :', sorted(nombres))
 print('Tri décroissant :', sorted(nombres, reverse=True))
 ```
-# La fonction `sorted` retourne une liste triée, et l'option `reverse=True` inverse l'ordre.
+La fonction `sorted` retourne une liste triée, et l'option `reverse=True` inverse l'ordre.
 " %}
 
 ---
@@ -121,7 +121,7 @@ while tentative != nombre_a_deviner:
     else:
         print('Bravo ! Vous avez deviné le nombre.')
 ```
-# Le module `random` génère un nombre aléatoire, et une boucle `while` continue jusqu'à ce que l'utilisateur devine.
+Le module `random` génère un nombre aléatoire, et une boucle `while` continue jusqu'à ce que l'utilisateur devine.
 " %}
 
 ---
@@ -139,7 +139,6 @@ try:
 except FileNotFoundError:
     print('Fichier introuvable.')
 ```
-# Le mode `with open()` garantit que le fichier sera fermé après lecture, et `strip()` enlève les espaces superflus.
+Le mode `with open()` garantit que le fichier sera fermé après lecture, et `strip()` enlève les espaces superflus.
 " %}
 
-$
