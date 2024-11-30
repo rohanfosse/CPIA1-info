@@ -85,7 +85,7 @@ Ainsi, `factorielle(5)` retourne `120`.
 La suite de Fibonacci est définie ainsi :
 - \( F(0) = 0 \)
 - \( F(1) = 1 \)
-- Pour \( n \geq 2 \), \( F(n) = F(n-1) + F(n-2) \).
+- Pour \( n >= 2 \), \( F(n) = F(n-1) + F(n-2) \).
 
 Voici une fonction récursive pour calculer un terme de Fibonacci :
 
@@ -140,17 +140,15 @@ Ainsi, `fibonacci(4)` retourne `3`.
 1. **Appels infinis** : Si le cas de base est mal défini ou absent, la récursion ne s'arrête jamais et provoque une erreur (`RecursionError`).
 2. **Performance** : Les appels multiples imbriqués, comme dans Fibonacci, peuvent être coûteux en termes de temps et de mémoire.
 
----
 
 ## Exercices Pratiques
 
-### Exercice 1 : Somme des Nombres
+#### Exercice 1 : Somme des Nombres
 
 Créez une fonction récursive `somme(n)` qui retourne la somme des \( n \) premiers nombres.
 
----
 
-### Exercice 2 : Compteur
+#### Exercice 2 : Compteur
 
 Créez une fonction récursive `compter(n)` qui affiche tous les nombres de \( n \) à 0.
 
@@ -167,9 +165,8 @@ compter(5)
 # 0
 ```
 
----
 
-### Exercice 3 : Puissance
+#### Exercice 3 : Puissance
 
 Implémentez une fonction récursive `puissance(x, n)` pour calculer \( x^n \) sans utiliser l’opérateur `**`.
 
@@ -177,6 +174,17 @@ Implémentez une fonction récursive `puissance(x, n)` pour calculer \( x^n \) s
 
 ```python
 print(puissance(2, 3))  # Affiche 8
+```
+
+#### Exercice 4 : Mot Palindrome
+
+Écrivez une fonction récursive `est_palindrome(mot)` qui vérifie si un mot est un palindrome (se lit de la même manière dans les deux sens).
+
+**Exemple** :
+
+```python
+print(est_palindrome('radar'))  # Affiche True
+print(est_palindrome('python'))  # Affiche False
 ```
 
 ---
