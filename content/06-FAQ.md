@@ -59,18 +59,20 @@ topics: FAQ; Questions; Réponses
   transform: rotate(-90deg);
 }
 
+/* Gestion des sections */
 .faq-content {
-  max-height: 0;
-  padding: 0 20px;
-  overflow: hidden;
+  height: 0; /* Fermé par défaut */
+  padding: 0 20px; /* Pas de padding initial */
+  overflow: hidden; /* Cache le contenu quand fermé */
   background-color: #fff;
-  transition: max-height 0.5s ease, padding 0.5s ease;
+  transition: height 0.5s ease, padding 0.5s ease;
 }
 
 .faq-section.open .faq-content {
-  max-height: 1000px; /* Une valeur suffisamment grande pour tout contenu */
-  padding: 20px;
+  height: auto; /* S'adapte à la hauteur du contenu */
+  padding: 20px; /* Ajoute le padding pour l'espacement */
 }
+
 
 .faq-section-title .arrow {
   font-size: 16px;
