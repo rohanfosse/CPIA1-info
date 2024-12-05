@@ -117,9 +117,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section excel">
     <h2>Excel</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment copier une formule sans modifier les références de cellule ?</div>
+      <div class="faq-question">Q : Où télécharger Excel et comment l’installer ?</div>
       <div class="faq-answer">
-        R : Ajoutez des signes dollar ($) dans la référence de cellule pour la rendre absolue, par exemple : $A$1. Ainsi, la référence reste fixe lors de la copie.
+        R : Vous pouvez télécharger Excel depuis le site officiel de Microsoft ou via votre compte Office 365. Suivez les instructions d'installation après l'achat ou la connexion à votre compte.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q : Que faire si Excel ne démarre pas ou plante au lancement ?</div>
+      <div class="faq-answer">
+        R : Essayez de réparer l’installation via le panneau de configuration de Windows ou mettez à jour le logiciel. Assurez-vous également que votre système d’exploitation est à jour.
       </div>
     </div>
     <div class="faq-item">
@@ -134,15 +140,21 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section flowgorithm">
     <h2>Flowgorithm</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment enregistrer un organigramme ?</div>
+      <div class="faq-question">Q : Où télécharger Flowgorithm et comment l’installer ?</div>
       <div class="faq-answer">
-        R : Allez dans le menu Fichier, puis cliquez sur Enregistrer ou Enregistrer sous pour sauvegarder votre organigramme au format .fprg.
+        R : Flowgorithm est téléchargeable gratuitement sur le site officiel flowgorithm.org. Après le téléchargement, double-cliquez sur le fichier d’installation et suivez les instructions.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Puis-je exporter un organigramme en PDF ?</div>
+      <div class="faq-question">Q : Pourquoi Flowgorithm ne s'ouvre pas ?</div>
       <div class="faq-answer">
-        R : Oui, utilisez l'option Exporter comme PDF dans le menu Fichier pour générer une version imprimable de votre organigramme.
+        R : Assurez-vous que Java est installé sur votre système. Flowgorithm nécessite Java pour fonctionner correctement. Mettez également à jour votre système.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q : Comment exécuter un organigramme dans Flowgorithm ?</div>
+      <div class="faq-answer">
+        R : Cliquez sur le bouton Exécuter (l'icône en forme de triangle vert). Suivez les étapes dans la fenêtre qui s'ouvre pour voir votre algorithme fonctionner.
       </div>
     </div>
   </div>
@@ -151,9 +163,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section arduino">
     <h2>Arduino</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment vérifier si mon code Arduino contient des erreurs ?</div>
+      <div class="faq-question">Q : Où télécharger l’IDE Arduino et comment l’installer ?</div>
       <div class="faq-answer">
-        R : Dans l'IDE Arduino, cliquez sur le bouton Vérifier (icône en forme de coche) pour compiler votre code et détecter d'éventuelles erreurs.
+        R : Téléchargez l’IDE Arduino depuis le site officiel arduino.cc. Installez-le en suivant les instructions fournies après le téléchargement.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q : Pourquoi l’IDE Arduino ne détecte-t-il pas ma carte ?</div>
+      <div class="faq-answer">
+        R : Assurez-vous que la carte est correctement connectée avec un câble USB fonctionnel. Vérifiez aussi que le bon port COM est sélectionné dans le menu Outils > Port.
       </div>
     </div>
     <div class="faq-item">
@@ -168,15 +186,21 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section python">
     <h2>Python</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment lire un fichier texte en Python ?</div>
+      <div class="faq-question">Q : Où télécharger Python et comment l’installer ?</div>
       <div class="faq-answer">
-        R : Utilisez la fonction open pour ouvrir le fichier et la méthode read pour lire son contenu, comme suit : <code>with open('fichier.txt') as f: contenu = f.read()</code>.
+        R : Téléchargez Python depuis le site officiel python.org. Pendant l'installation, cochez l'option Add Python to PATH pour faciliter son utilisation dans la ligne de commande.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Quelle est la différence entre une liste et un tuple en Python ?</div>
+      <div class="faq-question">Q : Que faire si Python ne fonctionne pas après l'installation ?</div>
       <div class="faq-answer">
-        R : Les listes sont modifiables (mutables), alors que les tuples ne le sont pas (immutables). Les tuples sont aussi légèrement plus rapides à utiliser.
+        R : Vérifiez que Python est ajouté au PATH. Si ce n’est pas le cas, réinstallez Python et cochez l’option Add to PATH dans l’assistant d’installation.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Q : Comment lire un fichier texte en Python ?</div>
+      <div class="faq-answer">
+        R : Utilisez la fonction open pour ouvrir le fichier et la méthode read pour lire son contenu : with open('fichier.txt') as f: contenu = f.read().
       </div>
     </div>
   </div>
