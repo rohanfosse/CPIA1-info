@@ -376,9 +376,22 @@ document.addEventListener("DOMContentLoaded", function () {
   sectionTitles.forEach((title) => {
     title.addEventListener("click", function () {
       const section = this.parentElement;
-      section.classList.toggle("open");
+      const content = section.querySelector(".faq-content");
+
+      if (section.classList.contains("open")) {
+        // Fermer la section
+        section.classList.remove("open");
+        content.style.height = "0";
+        content.style.padding = "0 20px";
+      } else {
+        // Ouvrir la section
+        section.classList.add("open");
+        content.style.height = `${content.scrollHeight}px`;
+        content.style.padding = "20px";
+      }
     });
   });
 });
+
 
 </script>
