@@ -57,16 +57,23 @@ Bienvenue sur le site dédié aux ETS des CPIA1 du CESI de Montpellier. Ce site 
 <div class="clickable-zones">
   <a href="/excel/" class="zone">
     <div class="icon">
-      <img src="/assets/images/excel-icon.png" alt="Excel Icon">
+      <img src="images/excel.png" alt="Excel Icon">
     </div>
     <p>Excel</p>
   </a>
   <a href="/flowgorithm/" class="zone">
     <div class="icon">
-      <img src="/assets/images/flowgorithm-icon.png" alt="Flowgorithm Icon">
+      <img src="images/flowgorithm.png" alt="Flowgorithm Icon">
     </div>
     <p>Flowgorithm</p>
   </a>
+    <a href="/python/" class="zone">
+    <div class="icon">
+      <img src="images/python.png" alt="Python Icon">
+    </div>
+    <p>Python</p>
+</a>
+
 </div>
 
 
