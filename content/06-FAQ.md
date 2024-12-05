@@ -1,6 +1,7 @@
 ---
 section_id: FAQ
 nav_order: 6
+title: Foire Aux Questions
 topics: FAQ; Questions; Réponses
 ---
 
@@ -22,82 +23,90 @@ topics: FAQ; Questions; Réponses
 
 /* Style des sections */
 .faq-section {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #2a9df4; /* Bande colorée */
+  background: #fff;
   border-radius: 8px;
-  background-color: #f9f9f9;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-/* Thèmes */
-.faq-section.excel {
-  border-left: 5px solid #1d6f42; /* Vert pour Excel */
+.faq-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
 }
-.faq-section.flowgorithm {
-  border-left: 5px solid #ff8c42; /* Orange pour Flowgorithm */
+
+.faq-section-title:hover {
+  background-color: #f0f0f0;
 }
-.faq-section.arduino {
-  border-left: 5px solid #0072ce; /* Bleu pour Arduino */
+
+.faq-section-title .arrow {
+  font-size: 16px;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
 }
-.faq-section.python {
-  border-left: 5px solid #f4c542; /* Jaune pour Python */
+
+.faq-section.collapsed .faq-section-title .arrow {
+  transform: rotate(-90deg);
+}
+
+.faq-content {
+  padding: 20px;
+  display: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
 
 /* Questions et réponses */
 .faq-item {
   margin-bottom: 15px;
-  border-radius: 8px;
   overflow: hidden;
-  transition: all 0.3s ease;
 }
 
 .faq-question {
   font-size: 18px;
-  color: #333;
-  padding: 15px 20px;
-  cursor: pointer;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
-  transition: background-color 0.3s ease;
-}
-
-.faq-question:hover {
-  background-color: #f0f8ff;
+  font-weight: bold;
+  color: #2a9df4;
+  margin-bottom: 5px;
 }
 
 .faq-answer {
-  padding: 15px 20px;
   font-size: 16px;
   color: #555;
   line-height: 1.6;
-  background: #fff;
-  display: none; /* Masquer par défaut */
 }
 
-.faq-answer.active {
-  display: block; /* Afficher la réponse si active */
+/* Couleurs spécifiques aux sections */
+.faq-section.excel {
+  border-left-color: #1d6f42;
 }
-
-/* Animation pour l'ouverture des réponses */
-.faq-answer {
-  animation: slideDown 0.3s ease;
+.faq-section.flowgorithm {
+  border-left-color: #ff8c42;
 }
-
-@keyframes slideDown {
-  from {
-    max-height: 0;
-    opacity: 0;
-  }
-  to {
-    max-height: 200px;
-    opacity: 1;
-  }
+.faq-section.arduino {
+  border-left-color: #0072ce;
+}
+.faq-section.python {
+  border-left-color: #f4c542;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .faq-title {
     font-size: 24px;
+  }
+
+  .faq-section-title {
+    font-size: 18px;
   }
 
   .faq-question {
@@ -115,92 +124,72 @@ topics: FAQ; Questions; Réponses
 
   <!-- Section Excel -->
   <div class="faq-section excel">
-    <h2>Excel</h2>
-    <div class="faq-item">
-      <div class="faq-question">Q : Où télécharger Excel et comment l’installer ?</div>
-      <div class="faq-answer">
-        R : Vous pouvez télécharger Excel depuis le site officiel de Microsoft ou via votre compte Office 365. Suivez les instructions d'installation après l'achat ou la connexion à votre compte.
-      </div>
+    <div class="faq-section-title">
+      Excel
+      <span class="arrow">▼</span>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Que faire si Excel ne démarre pas ou plante au lancement ?</div>
-      <div class="faq-answer">
-        R : Essayez de réparer l’installation via le panneau de configuration de Windows ou mettez à jour le logiciel. Assurez-vous également que votre système d’exploitation est à jour.
+    <div class="faq-content">
+      <div class="faq-item">
+        <div class="faq-question">Question : Où télécharger Excel et comment l’installer ?</div>
+        <div class="faq-answer">Réponse : Vous pouvez télécharger Excel depuis le site officiel de Microsoft ou via votre compte Office 365. Suivez les instructions d'installation après l'achat ou la connexion à votre compte.</div>
       </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Comment ajouter un graphique dans Excel ?</div>
-      <div class="faq-answer">
-        R : Sélectionnez vos données, allez dans l'onglet Insertion, puis choisissez le type de graphique souhaité, comme un histogramme ou un graphique en ligne.
+      <div class="faq-item">
+        <div class="faq-question">Question : Que faire si Excel ne démarre pas ou plante au lancement ?</div>
+        <div class="faq-answer">Réponse : Essayez de réparer l’installation via le panneau de configuration de Windows ou mettez à jour le logiciel. Assurez-vous également que votre système d’exploitation est à jour.</div>
       </div>
     </div>
   </div>
 
   <!-- Section Flowgorithm -->
   <div class="faq-section flowgorithm">
-    <h2>Flowgorithm</h2>
-    <div class="faq-item">
-      <div class="faq-question">Q : Où télécharger Flowgorithm et comment l’installer ?</div>
-      <div class="faq-answer">
-        R : Flowgorithm est téléchargeable gratuitement sur le site officiel flowgorithm.org. Après le téléchargement, double-cliquez sur le fichier d’installation et suivez les instructions.
-      </div>
+    <div class="faq-section-title">
+      Flowgorithm
+      <span class="arrow">▼</span>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Pourquoi Flowgorithm ne s'ouvre pas ?</div>
-      <div class="faq-answer">
-        R : Assurez-vous que Java est installé sur votre système. Flowgorithm nécessite Java pour fonctionner correctement. Mettez également à jour votre système.
+    <div class="faq-content">
+      <div class="faq-item">
+        <div class="faq-question">Question : Où télécharger Flowgorithm et comment l’installer ?</div>
+        <div class="faq-answer">Réponse : Flowgorithm est téléchargeable gratuitement sur le site officiel flowgorithm.org. Après le téléchargement, double-cliquez sur le fichier d’installation et suivez les instructions.</div>
       </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Comment exécuter un organigramme dans Flowgorithm ?</div>
-      <div class="faq-answer">
-        R : Cliquez sur le bouton Exécuter (l'icône en forme de triangle vert). Suivez les étapes dans la fenêtre qui s'ouvre pour voir votre algorithme fonctionner.
+      <div class="faq-item">
+        <div class="faq-question">Question : Pourquoi Flowgorithm ne s'ouvre pas ?</div>
+        <div class="faq-answer">Réponse : Assurez-vous que Java est installé sur votre système. Flowgorithm nécessite Java pour fonctionner correctement. Mettez également à jour votre système.</div>
       </div>
     </div>
   </div>
 
   <!-- Section Arduino -->
   <div class="faq-section arduino">
-    <h2>Arduino</h2>
-    <div class="faq-item">
-      <div class="faq-question">Q : Où télécharger l’IDE Arduino et comment l’installer ?</div>
-      <div class="faq-answer">
-        R : Téléchargez l’IDE Arduino depuis le site officiel arduino.cc. Installez-le en suivant les instructions fournies après le téléchargement.
-      </div>
+    <div class="faq-section-title">
+      Arduino
+      <span class="arrow">▼</span>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Pourquoi l’IDE Arduino ne détecte-t-il pas ma carte ?</div>
-      <div class="faq-answer">
-        R : Assurez-vous que la carte est correctement connectée avec un câble USB fonctionnel. Vérifiez aussi que le bon port COM est sélectionné dans le menu Outils > Port.
+    <div class="faq-content">
+      <div class="faq-item">
+        <div class="faq-question">Question : Où télécharger l’IDE Arduino et comment l’installer ?</div>
+        <div class="faq-answer">Réponse : Téléchargez l’IDE Arduino depuis le site officiel arduino.cc. Installez-le en suivant les instructions fournies après le téléchargement.</div>
       </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Comment utiliser un capteur de température avec Arduino ?</div>
-      <div class="faq-answer">
-        R : Connectez le capteur à la carte Arduino selon le schéma indiqué dans la documentation, puis utilisez une bibliothèque comme DHT pour lire les données.
+      <div class="faq-item">
+        <div class="faq-question">Question : Pourquoi l’IDE Arduino ne détecte-t-il pas ma carte ?</div>
+        <div class="faq-answer">Réponse : Assurez-vous que la carte est correctement connectée avec un câble USB fonctionnel. Vérifiez aussi que le bon port COM est sélectionné dans le menu Outils > Port.</div>
       </div>
     </div>
   </div>
 
   <!-- Section Python -->
   <div class="faq-section python">
-    <h2>Python</h2>
-    <div class="faq-item">
-      <div class="faq-question">Q : Où télécharger Python et comment l’installer ?</div>
-      <div class="faq-answer">
-        R : Téléchargez Python depuis le site officiel python.org. Pendant l'installation, cochez l'option Add Python to PATH pour faciliter son utilisation dans la ligne de commande.
-      </div>
+    <div class="faq-section-title">
+      Python
+      <span class="arrow">▼</span>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Que faire si Python ne fonctionne pas après l'installation ?</div>
-      <div class="faq-answer">
-        R : Vérifiez que Python est ajouté au PATH. Si ce n’est pas le cas, réinstallez Python et cochez l’option Add to PATH dans l’assistant d’installation.
+    <div class="faq-content">
+      <div class="faq-item">
+        <div class="faq-question">Question : Où télécharger Python et comment l’installer ?</div>
+        <div class="faq-answer">Réponse : Téléchargez Python depuis le site officiel python.org. Pendant l'installation, cochez l'option Add Python to PATH pour faciliter son utilisation dans la ligne de commande.</div>
       </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Q : Comment lire un fichier texte en Python ?</div>
-      <div class="faq-answer">
-        R : Utilisez la fonction open pour ouvrir le fichier et la méthode read pour lire son contenu : with open('fichier.txt') as f: contenu = f.read().
+      <div class="faq-item">
+        <div class="faq-question">Question : Que faire si je vois l’erreur "ModuleNotFoundError" ?</div>
+        <div class="faq-answer">Réponse : Cela signifie que le module que vous essayez d’importer n’est pas installé. Installez-le en utilisant la commande pip install nom_du_module.</div>
       </div>
     </div>
   </div>
@@ -208,21 +197,18 @@ topics: FAQ; Questions; Réponses
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const questions = document.querySelectorAll(".faq-question");
+  const sectionTitles = document.querySelectorAll(".faq-section-title");
 
-  questions.forEach((question) => {
-    question.addEventListener("click", function () {
-      const answer = this.nextElementSibling;
-
-      // Fermer toutes les autres réponses ouvertes
-      document.querySelectorAll(".faq-answer.active").forEach((openAnswer) => {
-        if (openAnswer !== answer) {
-          openAnswer.classList.remove("active");
-        }
-      });
-
-      // Bascule la réponse correspondante
-      answer.classList.toggle("active");
+  sectionTitles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const section = this.parentElement;
+      section.classList.toggle("collapsed");
+      const content = section.querySelector(".faq-content");
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
     });
   });
 });
