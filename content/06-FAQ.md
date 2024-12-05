@@ -1,5 +1,6 @@
 ---
 section: FAQ
+title: Questions Fréquentes
 nav_order: 6
 topics: FAQ; Questions; Réponses
 ---
@@ -61,17 +62,18 @@ topics: FAQ; Questions; Réponses
 
 /* Gestion des sections */
 .faq-content {
-  height: 0; /* Fermé par défaut */
-  padding: 0 20px; /* Pas de padding initial */
+  max-height: 0; /* Fermé par défaut */
+  padding: 0 20px; /* Réduit l'espace initial */
   overflow: hidden; /* Cache le contenu quand fermé */
   background-color: #fff;
-  transition: height 0.5s ease, padding 0.5s ease;
+  transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
 .faq-section.open .faq-content {
-  height: auto; /* S'adapte à la hauteur du contenu */
-  padding: 20px; /* Ajoute le padding pour l'espacement */
+  max-height: 1000px; /* Sera ajusté dynamiquement par le JS */
+  padding: 20px; /* Ajoute l'espacement */
 }
+
 
 
 .faq-section-title .arrow {
@@ -369,7 +371,9 @@ topics: FAQ; Questions; Réponses
 </div>
 
 </div>
+
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
   const sectionTitles = document.querySelectorAll(".faq-section-title");
 
@@ -381,17 +385,16 @@ document.addEventListener("DOMContentLoaded", function () {
       if (section.classList.contains("open")) {
         // Fermer la section
         section.classList.remove("open");
-        content.style.height = "0";
-        content.style.padding = "0 20px";
+        content.style.maxHeight = "0"; // Réduit la hauteur
+        content.style.padding = "0 20px"; // Réduit le padding
       } else {
         // Ouvrir la section
         section.classList.add("open");
-        content.style.height = `${content.scrollHeight}px`;
-        content.style.padding = "20px";
+        content.style.maxHeight = `${content.scrollHeight}px`; // Hauteur du contenu
+        content.style.padding = "20px"; // Ajoute le padding
       }
     });
   });
 });
-
 
 </script>
