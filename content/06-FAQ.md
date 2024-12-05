@@ -1,7 +1,6 @@
 ---
 section_id: FAQ
 nav_order: 6
-title: Foire Aux Questions
 topics: FAQ; Questions; Réponses
 ---
 
@@ -108,6 +107,7 @@ topics: FAQ; Questions; Réponses
 .faq-answer {
   font-size: 16px;
   color: #555;
+  font-weight: bold;
   line-height: 1.6;
   margin-left: 20px;
 }
@@ -212,16 +212,69 @@ topics: FAQ; Questions; Réponses
       <span class="arrow">▼</span>
     </div>
     <div class="faq-content">
-      <div class="faq-item">
-        <div class="faq-question">Où télécharger l’IDE Arduino et comment l’installer ?</div>
-        <div class="faq-answer">Téléchargez l’IDE Arduino depuis le site officiel arduino.cc. Installez-le en suivant les instructions fournies après le téléchargement.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question">Pourquoi l’IDE Arduino ne détecte-t-il pas ma carte ?</div>
-        <div class="faq-answer">Assurez-vous que la carte est correctement connectée avec un câble USB fonctionnel. Vérifiez aussi que le bon port COM est sélectionné dans le menu Outils > Port.</div>
-      </div>
+        <div class="faq-item">
+            <div class="faq-question">Où télécharger l’IDE Arduino et comment l’installer ?</div>
+            <div class="faq-answer">
+                Téléchargez l’IDE Arduino depuis le site officiel <a href="https://www.arduino.cc">arduino.cc</a>. Installez-le en suivant les instructions fournies après le téléchargement.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Pourquoi l’IDE Arduino ne détecte-t-il pas ma carte ?</div>
+            <div class="faq-answer">
+                Assurez-vous que la carte est correctement connectée avec un câble USB fonctionnel. Vérifiez aussi que le bon port COM est sélectionné dans le menu Outils > Port. Si le problème persiste, réinstallez les pilotes Arduino.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Que faire si mon programme ne se télécharge pas sur la carte ?</div>
+            <div class="faq-answer">
+                Vérifiez que la carte sélectionnée dans <code>Outils > Type de carte</code> correspond au modèle utilisé (par exemple Arduino Uno). Si vous obtenez une erreur "avrdude", assurez-vous que le port COM est correct et que la carte est sous tension.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Pourquoi mon Arduino ne s’allume pas ?</div>
+            <div class="faq-answer">
+                Assurez-vous que le câble USB est fonctionnel et correctement connecté à un port USB actif. Si la LED de la carte ne s’allume pas, essayez un autre câble ou vérifiez si la carte est endommagée.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Que faire si mon capteur ou composant connecté ne fonctionne pas ?</div>
+            <div class="faq-answer">
+                Vérifiez les connexions sur la breadboard et assurez-vous que les broches sont correctement câblées aux bons ports de l’Arduino. Testez également votre composant individuellement avec un exemple de code Arduino.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Pourquoi l’IDE Arduino affiche-t-il "Serial Port in Use" ?</div>
+            <div class="faq-answer">
+                Cela signifie qu’un autre programme utilise le port série (par exemple, un terminal série ou un autre logiciel). Fermez tous les programmes susceptibles d’utiliser le port série et réessayez.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Que faire si je vois "Sketch too big" dans l’IDE ?</div>
+            <div class="faq-answer">
+                Cette erreur indique que le programme est trop volumineux pour la mémoire de la carte Arduino. Optimisez votre code en supprimant les bibliothèques inutiles ou en utilisant une carte avec plus de mémoire (comme une Mega 2560).
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Pourquoi la LED intégrée ne clignote pas avec mon programme Blink ?</div>
+            <div class="faq-answer">
+                Assurez-vous que le programme a été correctement téléversé. Vérifiez également que la broche utilisée dans le code correspond à la LED intégrée (généralement la broche 13 ou LED_BUILTIN).
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Pourquoi la communication série ne fonctionne-t-elle pas ?</div>
+            <div class="faq-answer">
+                Assurez-vous que le moniteur série est configuré avec le bon débit en bauds (par exemple, 9600 bauds) et que le port série est correct. Utilisez <code>Serial.begin(9600);</code> dans votre code pour initialiser la communication.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Que faire si mon servo-moteur ne bouge pas ?</div>
+            <div class="faq-answer">
+                Vérifiez que le servo est alimenté avec une source externe si nécessaire (et non par l’Arduino directement). Assurez-vous également que vous utilisez la bibliothèque <code>Servo.h</code> et que la broche signal est bien connectée.
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+
 
 <!-- Section Python -->
 <div class="faq-section python">
@@ -242,6 +295,44 @@ topics: FAQ; Questions; Réponses
         Cela signifie que le module que vous essayez d’importer n’est pas installé. Installez-le en utilisant la commande <code>pip install nom_du_module</code>. Assurez-vous que pip est configuré correctement.
       </div>
     </div>
+    <!-- Questions Jupyter -->
+    <div class="faq-item">
+      <div class="faq-question">Comment installer Jupyter Notebook ?</div>
+      <div class="faq-answer">
+        Installez Jupyter Notebook avec la commande <code>pip install notebook</code>. Si vous utilisez Anaconda, Jupyter est déjà inclus par défaut.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Que faire si Jupyter Notebook ne s’ouvre pas dans le navigateur ?</div>
+      <div class="faq-answer">
+        Si Jupyter ne s’ouvre pas automatiquement, lancez-le manuellement en exécutant <code>jupyter notebook</code> dans votre terminal. Copiez l’URL affichée (généralement commençant par <code>http://localhost</code>) et collez-la dans un navigateur.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Pourquoi mes cellules de code ne s’exécutent-elles pas dans Jupyter Notebook ?</div>
+      <div class="faq-answer">
+        Assurez-vous que le kernel est actif. Si une cellule reste bloquée, redémarrez le kernel via <code>Kernel > Restart</code> dans le menu.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Comment ajouter un kernel personnalisé dans Jupyter Notebook ?</div>
+      <div class="faq-answer">
+        Créez un kernel avec la commande <code>ipython kernel install --user --name=nom_du_kernel</code>. Ensuite, sélectionnez ce kernel depuis le menu déroulant dans Jupyter.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Que faire si Jupyter affiche "No module named X" ?</div>
+      <div class="faq-answer">
+        Cela signifie que le module n’est pas installé dans l’environnement utilisé par Jupyter. Installez-le avec <code>!pip install nom_du_module</code> directement dans une cellule de Jupyter.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Pourquoi Jupyter affiche "Kernel is dead" ?</div>
+      <div class="faq-answer">
+        Cette erreur se produit lorsque le kernel plante. Redémarrez-le via <code>Kernel > Restart</code>. Si le problème persiste, vérifiez votre code pour d’éventuelles erreurs critiques ou réinstallez Jupyter.
+      </div>
+    </div>
+    <!-- Questions classiques Python -->
     <div class="faq-item">
       <div class="faq-question">Pourquoi Python affiche "SyntaxError" ?</div>
       <div class="faq-answer">
@@ -261,45 +352,9 @@ topics: FAQ; Questions; Réponses
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Que faire si Python affiche "ValueError" ?</div>
-      <div class="faq-answer">
-        "ValueError" signifie que vous avez passé une valeur incorrecte à une fonction. Par exemple, convertir une chaîne non numérique en entier : <code>int("abc")</code>. Vérifiez les valeurs avant d’appeler la fonction.
-      </div>
-    </div>
-    <div class="faq-item">
       <div class="faq-question">Comment résoudre "ZeroDivisionError" ?</div>
       <div class="faq-answer">
         Cette erreur apparaît lorsque vous tentez de diviser un nombre par zéro. Par exemple : <code>10 / 0</code>. Ajoutez une condition pour vérifier si le dénominateur est différent de zéro avant d'effectuer la division.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Pourquoi j’obtiens "NameError" ?</div>
-      <div class="faq-answer">
-        "NameError" signifie que Python ne reconnaît pas le nom que vous avez utilisé. Cela peut se produire si vous essayez d'utiliser une variable avant de l'avoir définie ou si vous avez une faute de frappe dans son nom.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Que faire si Python affiche "ImportError" ?</div>
-      <div class="faq-answer">
-        "ImportError" signifie que le module que vous essayez d'importer est introuvable. Vérifiez que le module est bien installé en utilisant <code>pip list</code>, ou installez-le avec <code>pip install nom_du_module</code>.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Comment résoudre "AttributeError" ?</div>
-      <div class="faq-answer">
-        "AttributeError" survient lorsque vous essayez d'accéder à un attribut ou une méthode qui n'existe pas pour un objet. Vérifiez la documentation de l'objet pour vous assurer que l'attribut ou la méthode est valide.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Que faire si Python affiche "FileNotFoundError" ?</div>
-      <div class="faq-answer">
-        Cette erreur indique que le fichier que vous essayez d'ouvrir n'existe pas ou que le chemin est incorrect. Assurez-vous que le fichier est dans le bon répertoire et que le chemin est exact.
-      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">Pourquoi mon boucle infinie bloque-t-elle mon script ?</div>
-      <div class="faq-answer">
-        Une boucle infinie peut survenir si la condition de fin n'est jamais atteinte. Par exemple, dans une boucle <code>while</code>, assurez-vous que la condition devient <code>False</code> à un moment donné pour éviter qu'elle tourne à l'infini.
       </div>
     </div>
     <div class="faq-item">
@@ -310,8 +365,8 @@ topics: FAQ; Questions; Réponses
     </div>
   </div>
 </div>
-</div>
 
+</div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const sectionTitles = document.querySelectorAll(".faq-section-title");
