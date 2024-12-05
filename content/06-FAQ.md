@@ -1,6 +1,5 @@
 ---
-section: FAQ
-title: Questions Fréquentes
+section_id: FAQ
 nav_order: 6
 topics: FAQ; Questions; Réponses
 ---
@@ -72,6 +71,7 @@ topics: FAQ; Questions; Réponses
 .faq-section.open .faq-content {
   max-height: 1000px; /* Sera ajusté dynamiquement par le JS */
   padding: 20px; /* Ajoute l'espacement */
+  padding-bottom: 30px; /* Ajoute un espace supplémentaire en bas */
 }
 
 
