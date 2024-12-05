@@ -1,5 +1,5 @@
 ---
-section_id: FAQ
+section: FAQ
 nav_order: 6
 topics: FAQ; Questions; Réponses
 ---
