@@ -1,7 +1,6 @@
 ---
-section_id: Pour aller plus loin
+section_id: FAQ
 nav_order: 6
-title: Foire Aux Questions
 topics: FAQ; Questions; Réponses
 ---
 
@@ -118,15 +117,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section excel">
     <h2>Excel</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment créer une formule simple dans Excel ?</div>
+      <div class="faq-question">Q : Comment copier une formule sans modifier les références de cellule ?</div>
       <div class="faq-answer">
-        R : Sélectionnez une cellule, tapez `=` suivi de votre calcul (ex. : `=A1+B1`), puis appuyez sur Entrée. Excel affichera le résultat.
+        R : Ajoutez des signes dollar ($) dans la référence de cellule pour la rendre absolue, par exemple : $A$1. Ainsi, la référence reste fixe lors de la copie.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment figer une ligne ou une colonne dans Excel ?</div>
+      <div class="faq-question">Q : Comment ajouter un graphique dans Excel ?</div>
       <div class="faq-answer">
-        R : Allez dans le menu **Affichage**, puis cliquez sur **Figer les volets**. Choisissez l'option appropriée pour figer la première ligne ou colonne.
+        R : Sélectionnez vos données, allez dans l'onglet Insertion, puis choisissez le type de graphique souhaité, comme un histogramme ou un graphique en ligne.
       </div>
     </div>
   </div>
@@ -135,15 +134,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section flowgorithm">
     <h2>Flowgorithm</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment commencer un nouvel algorithme dans Flowgorithm ?</div>
+      <div class="faq-question">Q : Comment enregistrer un organigramme ?</div>
       <div class="faq-answer">
-        R : Ouvrez Flowgorithm, sélectionnez **Fichier > Nouveau**. Vous pouvez ensuite ajouter des symboles pour construire votre algorithme.
+        R : Allez dans le menu Fichier, puis cliquez sur Enregistrer ou Enregistrer sous pour sauvegarder votre organigramme au format .fprg.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment exécuter un organigramme dans Flowgorithm ?</div>
+      <div class="faq-question">Q : Puis-je exporter un organigramme en PDF ?</div>
       <div class="faq-answer">
-        R : Cliquez sur le bouton **Exécuter** (l'icône en forme de triangle vert). Suivez les étapes dans la fenêtre qui s'ouvre pour voir votre algorithme fonctionner.
+        R : Oui, utilisez l'option Exporter comme PDF dans le menu Fichier pour générer une version imprimable de votre organigramme.
       </div>
     </div>
   </div>
@@ -152,15 +151,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section arduino">
     <h2>Arduino</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Quels composants sont nécessaires pour commencer avec Arduino ?</div>
+      <div class="faq-question">Q : Comment vérifier si mon code Arduino contient des erreurs ?</div>
       <div class="faq-answer">
-        R : Un kit de base Arduino (incluant une carte Arduino Uno, des câbles, résistances, LED et une breadboard) est recommandé pour débuter.
+        R : Dans l'IDE Arduino, cliquez sur le bouton Vérifier (icône en forme de coche) pour compiler votre code et détecter d'éventuelles erreurs.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment uploader un code sur ma carte Arduino ?</div>
+      <div class="faq-question">Q : Comment utiliser un capteur de température avec Arduino ?</div>
       <div class="faq-answer">
-        R : Connectez votre carte Arduino à votre ordinateur avec un câble USB, puis cliquez sur le bouton **Téléverser** dans l'IDE Arduino.
+        R : Connectez le capteur à la carte Arduino selon le schéma indiqué dans la documentation, puis utilisez une bibliothèque comme DHT pour lire les données.
       </div>
     </div>
   </div>
@@ -169,15 +168,15 @@ topics: FAQ; Questions; Réponses
   <div class="faq-section python">
     <h2>Python</h2>
     <div class="faq-item">
-      <div class="faq-question">Q : Comment installer une bibliothèque Python avec pip ?</div>
+      <div class="faq-question">Q : Comment lire un fichier texte en Python ?</div>
       <div class="faq-answer">
-        R : Ouvrez un terminal ou une console et tapez `pip install nom_de_la_bibliotheque`. Par exemple, `pip install numpy`.
+        R : Utilisez la fonction open pour ouvrir le fichier et la méthode read pour lire son contenu, comme suit : <code>with open('fichier.txt') as f: contenu = f.read()</code>.
       </div>
     </div>
     <div class="faq-item">
-      <div class="faq-question">Q : Que faire si j’ai une erreur “Module not found” en Python ?</div>
+      <div class="faq-question">Q : Quelle est la différence entre une liste et un tuple en Python ?</div>
       <div class="faq-answer">
-        R : Cela signifie que la bibliothèque n’est pas installée. Utilisez la commande `pip install nom_du_module` pour l’installer.
+        R : Les listes sont modifiables (mutables), alors que les tuples ne le sont pas (immutables). Les tuples sont aussi légèrement plus rapides à utiliser.
       </div>
     </div>
   </div>
