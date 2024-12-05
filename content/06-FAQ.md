@@ -207,7 +207,6 @@ topics: FAQ; Questions; Réponses
     </div>
   </div>
 
-  <!-- Section Python -->
 <!-- Section Python -->
 <div class="faq-section python">
   <div class="faq-section-title">
@@ -294,6 +293,7 @@ topics: FAQ; Questions; Réponses
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <script>
