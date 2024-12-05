@@ -1,5 +1,6 @@
 ---
 section_id: FAQ
+title: FAQ - Questions Fréquentes
 nav_order: 6
 topics: FAQ; Questions; Réponses
 ---
