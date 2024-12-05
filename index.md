@@ -123,25 +123,25 @@ layout: lesson-content
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
 <div class="clickable-zones">
-  <a href="/content/00-Excel/01-Cours.md" class="zone">
+  <a href="content/00-Excel/01-Cours.md" class="zone">
     <div class="icon">
       <img src="images/excel.png" alt="Excel Icon">
     </div>
     <p>Excel</p>
   </a>
-  <a href="/content/01-flowgorithme/introduction.md" class="zone">
+  <a href="content/01-flowgorithme/introduction.md" class="zone">
     <div class="icon">
       <img src="images/flowgorithm.png" alt="Flowgorithm Icon">
     </div>
     <p>Flowgorithm</p>
   </a>
-  <a href="/content/02-arduino/00-Introduction.md" class="zone">
+  <a href="content/02-arduino/00-Introduction.md" class="zone">
     <div class="icon">
       <img src="images/arduino.png" alt="Arduino Icon">
     </div>
     <p>Arduino</p>
   </a>
-  <a href="/content/03-python/0-avantCommencer.md" class="zone">
+  <a href="content/03-python/0-avantCommencer.md" class="zone">
     <div class="icon">
       <img src="images/python.png" alt="Python Icon">
     </div>
