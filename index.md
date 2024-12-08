@@ -129,7 +129,7 @@ layout: lesson-content
     </div>
     <p>Excel</p>
   </a>
-  <a href="content/01-flowgorithme/introduction.html" class="zone">
+  <a href="content/01-flowgorithme/00-Introduction.html" class="zone">
     <div class="icon">
       <img src="images/flowgorithm.png" alt="Flowgorithm Icon">
     </div>
