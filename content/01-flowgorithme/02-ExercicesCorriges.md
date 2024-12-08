@@ -1,6 +1,6 @@
 ---
 section: Flowgorithm
-nav_order: 2
+nav_order: 3
 title: Exercices Corrigés
 topics: Flowgorithm; Algorithmique; Commandes
 ---
@@ -173,7 +173,6 @@ topics: Flowgorithm; Algorithmique; Commandes
 
 ### Exercice : Jeu du Plus ou Moins
 
-### Énoncé de l'exercice :
 Vous devez créer un programme en Flowgorithm pour un jeu du **"Plus ou Moins"** où l'utilisateur doit deviner un nombre secret. Voici les consignes :
 
 1. **Définir un nombre secret** : Utilisez une fonction qui génère un nombre aléatoire entre 1 et 100.  
@@ -254,3 +253,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+---
