@@ -5,7 +5,7 @@ title: Commandes de base
 topics: Flowgorithm; Algorithmique; Commandes
 ---
 
-### **Les commandes de base en Flowgorithm**
+### Les commandes de base en Flowgorithm
 
 Les commandes de base en Flowgorithm sont des instructions simples qui permettent de réaliser des opérations élémentaires telles que l'affectation de valeurs, l'affichage de messages, la lecture de données, les opérations mathématiques, les structures conditionnelles et les boucles. Dans l'image ci-dessous, vous pouvez voir les commandes de base disponibles dans Flowgorithm :
 
@@ -14,7 +14,7 @@ Les commandes de base en Flowgorithm sont des instructions simples qui permetten
 
 ---
 
-### 1. **Entrée/Sortie**
+### 1. Entrée/Sortie
 
 Ces blocs permettent d'interagir avec l'utilisateur ou de produire des résultats.
 
@@ -35,7 +35,7 @@ Ces blocs permettent d'interagir avec l'utilisateur ou de produire des résultat
   ```
 ---
 
-### 2. **Variables**
+### 2. Variables
 
 Les blocs liés aux variables permettent de gérer des données pendant l'exécution de l'algorithme.
 
@@ -57,7 +57,7 @@ Les blocs liés aux variables permettent de gérer des données pendant l'exécu
 
 ---
 
-### 3. **Contrôles**
+### 3. Contrôles
 
 Les blocs de contrôle permettent de prendre des décisions ou d'exécuter des instructions spécifiques.
 
@@ -82,7 +82,7 @@ Les blocs de contrôle permettent de prendre des décisions ou d'exécuter des i
 
 ---
 
-### 4. **Boucles**
+### 4. Boucles
 
 Les boucles permettent de répéter un ensemble d'instructions plusieurs fois, selon une condition.
 

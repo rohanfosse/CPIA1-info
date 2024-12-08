@@ -5,15 +5,15 @@ title: Introduction à Flowgorithm
 topics: Flowgorithm; Algorithmique; Introduction
 ---
 
-### **Qu'est-ce que l'algorithmique ?**
+### Qu'est-ce que l'algorithmique ?
 
 L'algorithmique est une discipline qui consiste à concevoir des algorithmes, c'est-à-dire des séquences d'instructions ordonnées et non ambiguës permettant de résoudre un problème donné. Un algorithme est une solution abstraite, indépendante de tout langage de programmation, qui décrit étape par étape la manière de résoudre un problème.
 
-### **Pourquoi apprendre l'algorithmique dans la vie professionnelle, même en dehors de l'informatique ?**
+### Pourquoi apprendre l'algorithmique dans la vie professionnelle, même en dehors de l'informatique ?
 
 L'algorithmique est une compétence transversale qui peut être utile dans de nombreux domaines professionnels. En effet, la capacité à concevoir des algorithmes pour résoudre des problèmes complexes est une compétence recherchée dans de nombreux métiers, notamment dans les domaines scientifiques, techniques et de l'ingénierie.
 
-### **Qu'est-ce que Flowgorithm ?**
+### Qu'est-ce que Flowgorithm ?
 
 Flowgorithm est un logiciel gratuit qui permet de créer des algorithmes visuels en utilisant des symboles graphiques pour représenter les différentes étapes d'un algorithme. Flowgorithm est un outil pédagogique très utile pour apprendre l'algorithmique, car il permet de visualiser de manière claire et intuitive la logique de programmation.
 
@@ -22,7 +22,7 @@ Flowgorithm est un logiciel gratuit qui permet de créer des algorithmes visuels
 Flowgorithm est disponible en téléchargement gratuit sur le site officiel : [Flowgorithm](http://www.flowgorithm.org/)
 Pour installer Flowgorithm, suivez les instructions d'installation fournies sur le site officiel.
 
-### **Comment utiliser Flowgorithm ?**
+### Comment utiliser Flowgorithm ?
 
 Flowgorithm est un logiciel convivial qui permet de créer des algorithmes en quelques clics. Voici les étapes pour créer un algorithme avec Flowgorithm :
 
@@ -34,7 +34,7 @@ Flowgorithm est un logiciel convivial qui permet de créer des algorithmes en qu
 6. **Exécuter l'algorithme** : Cliquez sur "Exécuter" pour tester votre algorithme et vérifier s'il fonctionne correctement.
 7. **Sauvegarder le document** : Enregistrez votre algorithme sous un nom de fichier approprié pour pouvoir le réutiliser ultérieurement.
 
-### **Pourquoi apprendre à programmer avec Flowgorithm ?**
+### Pourquoi apprendre à programmer avec Flowgorithm ?
 
 Apprendre à programmer avec Flowgorithm présente de nombreux avantages pour les débutants en informatique :
 
