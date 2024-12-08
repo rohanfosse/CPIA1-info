@@ -5,20 +5,22 @@ title: Cheat Sheet Flowgorithm
 topics: Flowgorithm; Algorithmique; Commandes
 ---
 
-### **Éléments de base**
+### Éléments de base
 
-#### **Formes du diagramme**
-1. **Ovale (Start/End)** : Représente le début ou la fin d'un programme.
-2. **Parallélogramme (Input/Output)** : Permet d'afficher ou de saisir des données.
-3. **Rectangle (Process)** : Représente une opération ou un calcul.
-4. **Losange (Decision)** : Représente une condition ou un test logique.
-5. **Flèche** : Indique le flux de contrôle.
+#### Formes du diagramme
+
+1. Ovale (Start/End) : Représente le début ou la fin d'un programme.
+2. Parallélogramme (Input/Output) : Permet d'afficher ou de saisir des données.
+3. Rectangle (Process) : Représente une opération ou un calcul.
+4. Losange (Decision) : Représente une condition ou un test logique.
+5. Flèche : Indique le flux de contrôle.
 
 ---
 
-### **Syntaxe des instructions**
+### Syntaxe des instructions
 
-#### **Déclaration de variables**
+#### Déclaration de variables
+
 - Syntaxe : `NomDeVariable : Type`
 - Types possibles :
   - `Integer` : Entiers.
@@ -26,53 +28,60 @@ topics: Flowgorithm; Algorithmique; Commandes
   - `String` : Chaînes de caractères.
   - `Boolean` : Valeurs logiques (`True` ou `False`).
 
-#### **Saisie utilisateur**
+#### Saisie utilisateur
+
 - Exemple : `Input nombre`
 - Permet de demander une valeur que l’utilisateur entre.
 
-#### **Affichage de données**
+#### Affichage de données
+
 - Exemple : `Output "Bonjour, le résultat est : "`
 - Combine du texte et des valeurs à afficher.
 
-#### **Affectation de variables**
+#### Affectation de variables
+
 - Exemple : `somme = a + b`
 - Permet de calculer et de stocker un résultat.
 
 ---
 
-### **Opérations courantes**
+### Opérations courantes
 
-#### **Opérations arithmétiques**
-| Opération    | Symbole |
-|--------------|---------|
-| Addition     | `+`     |
-| Soustraction | `-`     |
-| Multiplication | `*`   |
-| Division     | `/`     |
-| Modulo       | `%`     |
+#### Opérations arithmétiques
 
-#### **Opérations logiques**
-| Opération     | Symbole |
-|---------------|---------|
-| ET logique    | `AND`   |
-| OU logique    | `OR`    |
-| NON logique   | `NOT`   |
+| Opération      | Symbole |
+| -------------- | ------- |
+| Addition       | `+`     |
+| Soustraction   | `-`     |
+| Multiplication | `*`     |
+| Division       | `/`     |
+| Modulo         | `%`     |
 
-#### **Opérations de comparaison**
-| Opération           | Symbole |
-|---------------------|---------|
+#### Opérations logiques
+
+| Opération   | Symbole |
+| ----------- | ------- |
+| ET logique  | `AND`   |
+| OU logique  | `OR`    |
+| NON logique | `NOT`   |
+
+#### Opérations de comparaison
+
+| Opération          | Symbole |
+| ------------------ | ------- |
 | Égalité            | `=`     |
-| Différent           | `≠`     |
-| Plus grand que      | `>`     |
-| Plus petit que      | `<`     |
-| Plus grand ou égal  | `≥`     |
-| Plus petit ou égal  | `≤`     |
+| Différent          | `≠`     |
+| Plus grand que     | `>`     |
+| Plus petit que     | `<`     |
+| Plus grand ou égal | `≥`     |
+| Plus petit ou égal | `≤`     |
 
 ---
 
-### **Structures de contrôle**
+### Structures de contrôle
 
-#### **Condition (Decision)**
+#### Condition (Decision)
+
 - Permet de tester une condition et d’exécuter des blocs différents selon le résultat.
 - Exemple :
   ```plaintext
@@ -83,8 +92,10 @@ topics: Flowgorithm; Algorithmique; Commandes
   End If
   ```
 
-#### **Boucles**
-1. **Pour (For Loop)** :
+#### Boucles
+
+1. Pour (For Loop) :
+
    - Exemple :
      ```plaintext
      For i = 1 To 10
@@ -92,7 +103,8 @@ topics: Flowgorithm; Algorithmique; Commandes
      End For
      ```
 
-2. **Tant que (While Loop)** :
+2. Tant que (While Loop) :
+
    - Exemple :
      ```plaintext
      While compteur < 10
@@ -100,7 +112,7 @@ topics: Flowgorithm; Algorithmique; Commandes
      End While
      ```
 
-3. **Faire...Tant que (Do While Loop)** :
+3. Faire...Tant que (Do While Loop) :
    - Exemple :
      ```plaintext
      Do
@@ -110,9 +122,10 @@ topics: Flowgorithm; Algorithmique; Commandes
 
 ---
 
-### **Fonctions et Procédures**
+### Fonctions et Procédures
 
-#### **Définir une fonction**
+#### Définir une fonction
+
 - Une fonction retourne une valeur.
 - Exemple :
   ```plaintext
@@ -121,7 +134,8 @@ topics: Flowgorithm; Algorithmique; Commandes
   End Function
   ```
 
-#### **Définir une procédure**
+#### Définir une procédure
+
 - Une procédure ne retourne pas de valeur.
 - Exemple :
   ```plaintext
@@ -130,20 +144,23 @@ topics: Flowgorithm; Algorithmique; Commandes
   End Procedure
   ```
 
-#### **Appel de fonction/procédure**
+#### Appel de fonction/procédure
+
 - Fonction : `resultat = CalculerSomme(3, 5)`
 - Procédure : `AfficherMessage("Bonjour")`
 
 ---
 
-### **Bonnes pratiques**
-1. **Nommez vos variables clairement** : Utilisez des noms explicites (`age`, `somme`, `nomClient`).
-2. **Commenter le diagramme** : Ajoutez des commentaires pour expliquer les étapes clés.
-3. **Testez avec différentes entrées** : Simulez plusieurs cas pour valider votre algorithme.
+### Bonnes pratiques
 
---- 
+1. Nommez vos variables clairement : Utilisez des noms explicites (`age`, `somme`, `nomClient`).
+2. Commenter le diagramme : Ajoutez des commentaires pour expliquer les étapes clés.
+3. Testez avec différentes entrées : Simulez plusieurs cas pour valider votre algorithme.
 
-### **Liens utiles**
-- **[Site officiel Flowgorithm](http://www.flowgorithm.org/)**
-- **[Guide d'utilisation](http://www.flowgorithm.org/documentation.html)**
-- **[Tutoriels en ligne](https://youtu.be/ivC6qz1nRg4?si=tncOqntvu3dBBEZz)**
+---
+
+### Liens utiles
+
+- [Site officiel Flowgorithm](http://www.flowgorithm.org/)
+- [Guide d'utilisation](http://www.flowgorithm.org/documentation.html)
+- [Tutoriels en ligne](https://youtu.be/ivC6qz1nRg4?si=tncOqntvu3dBBEZz)
