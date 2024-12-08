@@ -141,33 +141,9 @@ topics: Flowgorithm; Algorithmique; Commandes
 2. **Commenter le diagramme** : Ajoutez des commentaires pour expliquer les étapes clés.
 3. **Testez avec différentes entrées** : Simulez plusieurs cas pour valider votre algorithme.
 
----
-
-### **Exemple complet : Jeu du Plus ou Moins**
-
-```plaintext
-Start
-secret = Random(1, 100)
-tentative = 0
-Do
-    Input "Entrez un nombre entre 1 et 100 :", saisie
-    tentative = tentative + 1
-    If saisie < secret Then
-        Output "Trop petit !"
-    Else If saisie > secret Then
-        Output "Trop grand !"
-    End If
-While saisie ≠ secret
-Output "Bravo, vous avez trouvé en ", tentative, " tentatives !"
-End
-```
-
 --- 
 
 ### **Liens utiles**
 - **[Site officiel Flowgorithm](http://www.flowgorithm.org/)**
 - **[Guide d'utilisation](http://www.flowgorithm.org/documentation.html)**
-
---- 
-
-Avec ce cheatsheet, vous avez un guide rapide pour maîtriser Flowgorithm et créer vos propres algorithmes. Bonne programmation ! 🎉
+- **[Tutoriels en ligne](https://youtu.be/ivC6qz1nRg4?si=tncOqntvu3dBBEZz)**
