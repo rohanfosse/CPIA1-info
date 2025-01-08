@@ -5,11 +5,30 @@
                 <span class="me-2">
                     <img src="{{ 'images/logoCPIA1.png' | relative_url }}" alt="CPIA1 Logo" style="height: 50px;">
                 </span>
-                {{ site.title }}
+                <span class="site-title">{{ site.title }}</span>
             </a>
         </div>
     </nav>
 </header>
+
+<style>
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Apply Poppins font */
+.site-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold for emphasis */
+    font-size: 1.5rem; /* Adjust size for visibility */
+    color: #333; /* Default color */
+}
+
+.site-title:hover {
+    color: #007bff; /* Optional hover effect */
+    transition: color 0.3s ease;
+}
+</style>
+
 
 <script>
     function site_search() {
