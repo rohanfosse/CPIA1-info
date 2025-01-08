@@ -8,6 +8,7 @@ layout: lesson-content
 .clickable-zones {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
 }
@@ -17,13 +18,13 @@ layout: lesson-content
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  background: white;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
-  border-radius: 12px;
+  border-radius: 15px;
   padding: 20px;
-  width: 120px;
-  height: 140px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  width: 140px;
+  height: 160px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s ease-in-out forwards;
@@ -35,14 +36,19 @@ layout: lesson-content
 .zone:nth-child(4) { animation-delay: 0.4s; }
 
 .zone:hover {
-  transform: translateY(-5px);
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.9);
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.9);
 }
 
 .zone .icon {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.zone:hover .icon {
+  transform: scale(1.1);
 }
 
 .zone .icon img {
@@ -51,7 +57,7 @@ layout: lesson-content
 }
 
 .zone p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
   font-size: 16px;
   font-weight: bold;
@@ -59,20 +65,15 @@ layout: lesson-content
 }
 
 @media (max-width: 768px) {
-  .clickable-zones {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
   .zone {
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
     padding: 15px;
   }
 
   .zone .icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 
   .zone p {
@@ -85,8 +86,9 @@ layout: lesson-content
   border-left: 5px solid #007bff;
   background-color: #f8f9fa;
   padding: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin-bottom: 20px;
+  font-size: 14px;
 }
 
 /* Footer */
@@ -123,25 +125,25 @@ layout: lesson-content
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
 <div class="clickable-zones">
-  <a href="content/00-Excel/01-Cours.html" class="zone">
+  <a href="content/00-Excel/01-Cours.html" class="zone" aria-label="Accéder au cours Excel">
     <div class="icon">
       <img src="images/excel.png" alt="Excel Icon">
     </div>
     <p>Excel</p>
   </a>
-  <a href="content/01-flowgorithme/00-Introduction.html" class="zone">
+  <a href="content/01-flowgorithme/00-Introduction.html" class="zone" aria-label="Accéder au cours Flowgorithm">
     <div class="icon">
       <img src="images/flowgorithm.png" alt="Flowgorithm Icon">
     </div>
     <p>Flowgorithm</p>
   </a>
-  <a href="content/02-arduino/00-Introduction.html" class="zone">
+  <a href="content/02-arduino/00-Introduction.html" class="zone" aria-label="Accéder au cours Arduino">
     <div class="icon">
       <img src="images/arduino.png" alt="Arduino Icon">
     </div>
     <p>Arduino</p>
   </a>
-  <a href="content/03-python/0-avantCommencer.html" class="zone">
+  <a href="content/03-python/0-avantCommencer.html" class="zone" aria-label="Accéder au cours Python">
     <div class="icon">
       <img src="images/python.png" alt="Python Icon">
     </div>
