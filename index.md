@@ -1,5 +1,5 @@
 ---
-title:
+title: Accueil
 layout: lesson-content
 ---
 
