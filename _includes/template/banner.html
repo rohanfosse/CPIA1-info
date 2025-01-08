@@ -1,106 +1,14 @@
-<header class="py-3 shadow-sm">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-xxl d-flex justify-content-between align-items-center">
-        <!-- Logo and Title -->
-        <a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center text-decoration-none text-dark h4 mb-0">
-          {% if site.title-icon %}
-          <span class="me-2">
-            {% include icon.html icon=site.title-icon %}
-          </span>
-          {% endif %}
-          {{ site.title }}
-        </a>
-  
-        <!-- Navigation buttons -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active text-dark" href="{{ '/' | relative_url }}">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#about">À propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div class="ms-3">
-            <button class="btn btn-primary me-2">Se connecter</button>
-            <button class="btn btn-outline-dark">S'inscrire</button>
-          </div>
+<header class="py-3">
+    <nav class="">
+        <div class="container-xxl d-flex flex-wrap">
+            <a id="header-title" href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto h4">
+                {% if site.title-icon %}<span class="me-2">{% include icon.html icon=site.title-icon %}</span>{% endif %}
+                {{ site.title }}
+            </a>
+            
         </div>
-      </div>
     </nav>
-  </header>
-  
-  <style>
-  /* Header styles */
-  header {
-    background: linear-gradient(90deg, #007bff, #6610f2);
-    color: white;
-  }
-  
-  #header-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  header .navbar {
-    padding: 0.5rem 1rem;
-  }
-  
-  header .navbar-toggler {
-    border: none;
-    background: white;
-  }
-  
-  header .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280,123,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  
-  header .nav-link {
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  header .nav-link:hover {
-    color: #ffc107; /* Highlight color */
-  }
-  
-  header .btn-primary {
-    background: #ffc107;
-    border: none;
-  }
-  
-  header .btn-primary:hover {
-    background: #ffca2c;
-  }
-  
-  header .btn-outline-dark {
-    border-color: white;
-    color: white;
-  }
-  
-  header .btn-outline-dark:hover {
-    background: white;
-    color: #333;
-  }
-  </style>
-  
+</header>
 <script>
     function site_search() {
     var query = document.getElementById("site-search").value;
