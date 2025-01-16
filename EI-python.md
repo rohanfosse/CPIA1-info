@@ -1,14 +1,11 @@
 ---
-title: "EI Python"
+title: "Réussir une épreuve de Python sur papier"
 layout: lesson-content
 permalink: /EI-python.html
 ---
 
-# Cours : Réussir une épreuve de Python sur papier
 
----
-
-## Objectifs du cours
+### Objectifs du cours
 
 - Comprendre les différences entre coder sur ordinateur et répondre à une épreuve de Python sur papier.
 - Apprendre à structurer ses réponses et à vérifier son code sans exécution.
@@ -16,7 +13,7 @@ permalink: /EI-python.html
 
 ---
 
-## Partie 1 : Les particularités de coder sur papier
+### Partie 1 : Les particularités de coder sur papier
 
 1. **Pas de test immédiat**
 
@@ -33,7 +30,7 @@ permalink: /EI-python.html
 
 ---
 
-## Partie 2 : Strucuture des réponses
+### Partie 2 : Strucuture des réponses
 
 1. **Respecter la syntaxe Python**
 
@@ -64,7 +61,7 @@ permalink: /EI-python.html
 
 ---
 
-### Partie 3 : Décortiquer un énoncé d’exercice
+#### Partie 3 : Décortiquer un énoncé d’exercice
 
 1. **Lire attentivement l’énoncé**
 
@@ -116,9 +113,9 @@ permalink: /EI-python.html
 
 ---
 
-### Exemples de décorticage d’énoncé
+#### Exemples de décorticage d’énoncé
 
-#### Exemple 1 : Trouver les multiples d’un nombre
+###### Exemple 1 : Trouver les multiples d’un nombre
 
 **Énoncé :** Ecrire un programme qui affiche tous les multiples de 3 entre 0 et un nombre entier donné `n`.
 
@@ -149,7 +146,7 @@ permalink: /EI-python.html
        print(resultats)
    ```
 
-#### Exemple 2 : Calculer la factorielle
+###### Exemple 2 : Calculer la factorielle
 
 **Énoncé :** Ecrire une fonction qui calcule la factorielle d’un entier positif `n`.
 
@@ -177,7 +174,7 @@ permalink: /EI-python.html
        return resultat
    ```
 
-#### Exemple 3 : Identifier les voyelles dans une phrase
+###### Exemple 3 : Identifier les voyelles dans une phrase
 
 **Énoncé :** Ecrire un programme qui compte et affiche les voyelles dans une phrase donnée.
 
@@ -210,7 +207,7 @@ permalink: /EI-python.html
 
 ---
 
-### Partie 4 : Astuces pratiques
+#### Partie 4 : Astuces pratiques
 
 1. **Vérifier la syntaxe**
 
@@ -245,7 +242,7 @@ permalink: /EI-python.html
 
 ---
 
-### Partie 5 : Exercices pratiques
+#### Partie 5 : Exercices pratiques
 
 1. **Correction d’erreurs syntaxiques**
 
@@ -309,7 +306,7 @@ permalink: /EI-python.html
 
 ---
 
-### Section : Fonctions Mystère
+#### Section : Fonctions Mystère
 
 1. **Exercice 1 :** Expliquez ce que fait la fonction suivante et déterminez sa sortie pour `n = 5` :
 
