@@ -1,3 +1,9 @@
+---
+title: "EI Python"
+layout: lesson-content
+permalink: /EI-python.html
+---
+
 # Cours : Réussir une épreuve de Python sur papier
 
 ---
