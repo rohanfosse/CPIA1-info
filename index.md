@@ -124,6 +124,12 @@ layout: lesson-content
 
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
+{% include alert.html text="Entrainement pour l'EI du 30/01 :" type="warning" %}
+
+<a href="EI-python.md" class="alert">
+  <p>Entrainement et conseils pour l'EI</p>
+</a>
+
 <div class="clickable-zones">
   <a href="content/00-Excel/01-Cours.html" class="zone" aria-label="Accéder au cours Excel">
     <div class="icon">

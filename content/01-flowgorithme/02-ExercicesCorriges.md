@@ -194,7 +194,7 @@ Vous devez créer un programme en Flowgorithm pour un jeu du **"Plus ou Moins"**
 
 ---
 
-### Critères de réussite :
+### Critères de réussite
 - Le programme doit utiliser une **boucle** pour répéter la saisie tant que le nombre n’est pas trouvé.  
 - Les **conditions** doivent permettre de comparer la saisie avec le nombre secret.  
 - Un message doit être affiché pour guider l’utilisateur (trop grand, trop petit, ou correct).
