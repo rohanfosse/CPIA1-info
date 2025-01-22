@@ -1,7 +1,7 @@
 ---
 title: "Les transformées de Fourier en python"
 layout: lesson-content
-permalink: /Fourier.md
+permalink: /Fourier.html
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
