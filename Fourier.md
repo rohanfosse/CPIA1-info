@@ -34,19 +34,21 @@ Exemple quotidien : Lorsque vous écoutez une chanson enregistrée, un microphon
 
 ## Échantillonnage
 
-L'échantillonnage consiste à prélever des valeurs d’un signal continu à des intervalles de temps réguliers (\( \Delta t \)) :
+L'échantillonnage consiste à prélever des valeurs d’un signal continu à des intervalles de temps réguliers ( $ \Delta t $ ) :
 
-\[
+$$
 t_k = k \cdot \Delta t, \quad k \in \mathbb{Z}
-\]
+$$
 
 ### Théorème de Shannon-Nyquist
 
-Un signal est parfaitement reconstruisible si la fréquence d’échantillonnage \( F*e \) satisfait :
-\[
+Un signal est parfaitement reconstruisible si la fréquence d’échantillonnage $ F*e \) satisfait :
+
+$$
 F_e \geq 2 f*{max}
-\]
-où \( f\_{max} \) est la fréquence maximale du signal. Sinon, un phénomène d'aliasing se produit, où les hautes fréquences sont mal représentées.
+$$
+
+où $ f\_{max} \) est la fréquence maximale du signal. Sinon, un phénomène d'aliasing se produit, où les hautes fréquences sont mal représentées.
 
 ### Exemple concret
 
@@ -89,11 +91,11 @@ La quantification consiste à arrondir les amplitudes continues d’un signal à
 
 ### Concepts clés
 
-- Pas de quantification (\( \Delta V \)) :
-  \[
+- Pas de quantification ($ \Delta V \)) :
+  $$
   \Delta V = \frac{\text{Amplitude maximale} - \text{Amplitude minimale}}{2^n}
-  \]
-  où \( n \) est le nombre de bits de la quantification.
+  $$
+  où $ n \) est le nombre de bits de la quantification.
 - Exemple quotidien : En imagerie numérique, la profondeur de couleur (8 bits = 256 niveaux) influence la qualité de l'image.
 
 ### Code Python : Quantification
@@ -134,10 +136,10 @@ La transformée de Fourier (TF) convertit un signal du domaine temporel au domai
 
 ### Série de Fourier
 
-Pour un signal périodique \( s(t) \), la décomposition est donnée par :
-\[
+Pour un signal périodique $ s(t) \), la décomposition est donnée par :
+$$
 s(t) = a*0 + \sum*{k=1}^\infty \left( a_k \cos(2 \pi k f_0 t) + b_k \sin(2 \pi k f_0 t) \right)
-\]
+$$
 
 ### Code Python : Analyse fréquentielle
 
@@ -169,8 +171,8 @@ Le filtrage numérique permet d'isoler ou de supprimer certaines fréquences dan
 
 ### Types de filtres
 
-1. Passe-bas : Laisse passer les basses fréquences (\( f < f_c \)).
-2. Passe-haut : Laisse passer les hautes fréquences (\( f > f_c \)).
+1. Passe-bas : Laisse passer les basses fréquences ($ f < f_c \)).
+2. Passe-haut : Laisse passer les hautes fréquences ($ f > f_c \)).
 3. Passe-bande : Laisse passer une plage de fréquences.
 
 ### Exemple quotidien
