@@ -9,6 +9,9 @@ permalink: /Fourier.html
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
 
+
+Une correction du workshop 4 du projet signal peut être trouvée : [ici](Wkp4-Correction.ipynb)
+
 ## Bases du traitement du signal
 
 Le traitement du signal est une discipline fondamentale pour l’analyse et la manipulation des données. Un signal peut être vu comme une fonction du temps (ou de toute autre variable indépendante) décrivant un phénomène physique.
@@ -80,13 +83,13 @@ avec les paramètres suivants :
 
 - Amplitude $A = 1$ ,
 - Fréquence $f = 5 \, \text{Hz}$ ,
-- Phase $\phi = \pi$,
-- Fréquence d'échantillonnage $F_e = 1000 \, \text{Hz}$,
-- Durée $D = 1 \, \text{s}$.
+- Phase $\phi = \pi$ ,
+- Fréquence d'échantillonnage $F_e = 1000 \, \text{Hz}$ ,
+- Durée $D = 1 \, \text{s}$ .
 
 On souhaite :
 
-1. Générer le signal continu avec une fréquence d'échantillonnage élevée (\( F_e = 1000 \)).
+1. Générer le signal continu avec une fréquence d'échantillonnage élevée $F_e = 1000$ .
 2. Échantillonner le signal à des fréquences différentes
 
 ---
@@ -99,11 +102,14 @@ La quantification consiste à arrondir les amplitudes continues d’un signal à
 
 ### Concepts clés
 
-- Pas de quantification ($ \Delta V $) :
+- Pas de quantification ( $\Delta V$ ) :
+
   $$
   \Delta V = \frac{\text{Amplitude maximale} - \text{Amplitude minimale}}{2^n}
   $$
-  où $ n $ est le nombre de bits de la quantification.
+
+  où $n$ est le nombre de bits de la quantification.
+
 - Exemple quotidien : En imagerie numérique, la profondeur de couleur (8 bits = 256 niveaux) influence la qualité de l'image.
 
 ### Code Python : Quantification
@@ -136,38 +142,67 @@ plt.show()
 
 La transformée de Fourier (TF) convertit un signal du domaine temporel au domaine fréquentiel. Elle décompose un signal en une somme de sinusoïdes de différentes fréquences.
 
+### Théorème de Fourier
+
+Tout signal périodique peut être décomposé en une somme infinie de sinusoïdes. La transformée de Fourier permet d'analyser les composantes fréquentielles d'un signal.
+
+#### Signification physique
+
+La transformée de Fourier permet de décomposer un signal complexe en ses composantes de base. Cela permet d'analyser les fréquences présentes dans le signal et de mieux comprendre son comportement. Par exemple, un signal audio peut être décomposé en ses fréquences constitutives pour une analyse plus approfondie.
+
 ### Applications
 
-- Analyse spectrale (identifier les composantes fréquentielles).
+Les transformées de Fourier sont utilisées dans de nombreux domaines, notamment :
+
+- Traitement du signal (filtrage, détection de motifs).
+- Analyse spectrale (identification des composantes fréquentielles).
 - Compression audio (MP3) et vidéo (MPEG).
-- Réduction de bruit dans les signaux.
 
 ### Série de Fourier
 
-Pour un signal périodique $ s(t) $, la décomposition est donnée par :
+Pour un signal périodique $s(t)$ , la décomposition est donnée par :
+
 $$
 s(t) = a*0 + \sum*{k=1}^\infty \left( a_k \cos(2 \pi k f_0 t) + b_k \sin(2 \pi k f_0 t) \right)
 $$
 
-### Code Python : Analyse fréquentielle
+### Code Python : Implémentation de la transformée de Fourier
 
 ```python
-from scipy.signal import periodogram
+from scipy.fft import fft # Importer la fonction fft de scipy
+# La fonction fft permet de calculer la transformée de Fourier d'un signal
 
-# Signal avec deux fréquences
-f1, f2 = 10, 40
-signal = np.sin(2 * np.pi * f1 * t) + 0.5 * np.sin(2 * np.pi * f2 * t)
+# Signal sinusoïdal
+
+t = np.linspace(0, 1, 1000)
+
+signal = np.sin(2 * np.pi * 5 * t) + 0.5 * np.sin(2 * np.pi * 10 * t)
 
 # Transformée de Fourier
-frequencies, power = periodogram(signal, fs=1000)
+
+signal_fft = fft(signal)
+
+freq = np.fft.fftfreq(len(signal), t[1] - t[0])
 
 # Affichage
-plt.plot(frequencies, power)
-plt.title("Analyse spectrale (Transformée de Fourier)")
+
+plt.figure(figsize=(10, 6))
+
+plt.subplot(2, 1, 1)
+plt.plot(t, signal)
+plt.title("Signal sinusoïdal")
+plt.xlabel("Temps (s)")
+plt.ylabel("Amplitude")
+plt.grid()
+
+plt.subplot(2, 1, 2)
+plt.plot(freq, np.abs(signal_fft))
+plt.title("Transformée de Fourier")
 plt.xlabel("Fréquence (Hz)")
 plt.ylabel("Amplitude")
-plt.xlim(0, 50)
 plt.grid()
+
+plt.tight_layout()
 plt.show()
 ```
 
@@ -179,8 +214,8 @@ Le filtrage numérique permet d'isoler ou de supprimer certaines fréquences dan
 
 ### Types de filtres
 
-1. Passe-bas : Laisse passer les basses fréquences ($ f < f_c $).
-2. Passe-haut : Laisse passer les hautes fréquences ($ f > f_c $).
+1. Passe-bas : Laisse passer les basses fréquences ( $f < f_c$ ).
+2. Passe-haut : Laisse passer les hautes fréquences ( $f > f_c$ ).
 3. Passe-bande : Laisse passer une plage de fréquences.
 
 ### Exemple quotidien
@@ -208,35 +243,6 @@ plt.title("Filtrage passe-bas")
 plt.xlabel("Temps (s)")
 plt.ylabel("Amplitude")
 plt.legend()
-plt.grid()
-plt.show()
-```
-
----
-
-## 6. Synthèse de signaux complexes
-
-### Combinaison de signaux
-
-Un signal complexe peut être généré en combinant plusieurs signaux simples (somme ou produit).
-
-### Exemple quotidien
-
-Les synthétiseurs audio utilisent la synthèse additive (somme de signaux) pour produire des sons musicaux.
-
-### Code Python : Synthèse additive
-
-```python
-# Combinaison de deux signaux
-s1 = np.sin(2 * np.pi * 10 * t)  # Signal 1
-s2 = 0.5 * np.sin(2 * np.pi * 25 * t)  # Signal 2
-signal_combine = s1 + s2
-
-# Affichage
-plt.plot(t, signal_combine)
-plt.title("Combinaison de deux signaux sinusoïdaux")
-plt.xlabel("Temps (s)")
-plt.ylabel("Amplitude")
 plt.grid()
 plt.show()
 ```
