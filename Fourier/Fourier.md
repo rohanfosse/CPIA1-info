@@ -34,56 +34,64 @@ Exemple quotidien : Lorsque vous écoutez une chanson enregistrée, un microphon
 
 ## Échantillonnage
 
-L'échantillonnage consiste à prélever des valeurs d’un signal continu à des intervalles de temps réguliers ( $ \Delta t $ ) :
+L'échantillonnage consiste à prélever des valeurs d’un signal continu à des intervalles de temps réguliers ( $\Delta t$ ) :
 
 $$
 t_k = k \cdot \Delta t, \quad k \in \mathbb{Z}
 $$
 
+$\Delta t$ détermine la précision de l’échantillonnage. Plus $\Delta t$ est petit, plus la résolution temporelle est élevée. Cependant, un échantillonnage excessif peut entraîner une surcharge de données.
+
+La fréquence d’échantillonnage $F_e$ est l’inverse de l’intervalle d’échantillonnage :
+
+$$
+F_e = \frac{1}{\Delta t}
+$$
+
+#### Exemple quotidien
+
+Un stroboscope éclaire un objet à intervalles réguliers pour créer une illusion de mouvement. La fréquence de clignotement détermine la vitesse apparente de l’objet.
+
 ### Théorème de Shannon-Nyquist
 
-Un signal est parfaitement reconstruisible si la fréquence d’échantillonnage $ F*e \) satisfait :
+Un signal est parfaitement reconstruisible si la fréquence d’échantillonnage $F_e$ satisfait :
 
 $$
-F_e \geq 2 f*{max}
+F_e \geq 2 f_{max}
 $$
 
-où $ f\_{max} \) est la fréquence maximale du signal. Sinon, un phénomène d'aliasing se produit, où les hautes fréquences sont mal représentées.
+où $f_{max}$ est la fréquence maximale du signal. Sinon, un phénomène d'aliasing se produit, où les hautes fréquences sont mal représentées.
 
-### Exemple concret
+#### Qu'est ce que l'aliasing ?
 
-Un appareil photo numérique échantillonne une scène en capturant des pixels. Si la résolution est trop basse, les détails fins (hautes fréquences) sont perdus.
+L'aliasing est un phénomène qui se produit lorsqu'un signal est échantillonné à une fréquence insuffisante, ce qui entraîne une distorsion du signal. Les hautes fréquences du signal ne sont pas correctement représentées, ce qui peut entraîner des erreurs de lecture ou de traitement.
 
-### Code Python : Effet de l'échantillonnage
+Reprenons l'exemple d'échantillonnage du PDF et illustrons-le en Python.
 
-```python
-import numpy as np
-import matplotlib.pyplot as plt
+#### Exemple : Échantillonnage d’un signal sinusoïdal
 
-# Signal continu (10 Hz)
-f = 10
-t_continu = np.linspace(0, 1, 1000)  # Signal de haute résolution
-signal_continu = np.sin(2 * np.pi * f * t_continu)
+Un signal sinusoïdal est défini par :
 
-# Échantillonnage à différentes fréquences
-Fe_values = [30, 15, 5]  # Hz
-plt.figure(figsize=(12, 6))
+$$
+s(t) = A \sin(2 \pi f t + \phi)
+$$
 
-for Fe in Fe_values:
-    t_sampled = np.arange(0, 1, 1/Fe)
-    signal_sampled = np.sin(2 * np.pi * f * t_sampled)
-    plt.plot(t_sampled, signal_sampled, 'o-', label=f"Fe = {Fe} Hz")
+avec les paramètres suivants :
 
-plt.plot(t_continu, signal_continu, label="Signal continu", alpha=0.5)
-plt.legend()
-plt.title("Effet de l'échantillonnage sur un signal sinusoïdal")
-plt.xlabel("Temps (s)")
-plt.ylabel("Amplitude")
-plt.grid()
-plt.show()
-```
+- Amplitude $A = 1$ ,
+- Fréquence $f = 5 \, \text{Hz}$ ,
+- Phase $\phi = \pi$,
+- Fréquence d'échantillonnage $F_e = 1000 \, \text{Hz}$,
+- Durée $D = 1 \, \text{s}$.
+
+On souhaite :
+
+1. Générer le signal continu avec une fréquence d'échantillonnage élevée (\( F_e = 1000 \)).
+2. Échantillonner le signal à des fréquences différentes
 
 ---
+
+![alt text](echantillonage-comp.png)
 
 ## 3. Quantification
 
@@ -91,11 +99,11 @@ La quantification consiste à arrondir les amplitudes continues d’un signal à
 
 ### Concepts clés
 
-- Pas de quantification ($ \Delta V \)) :
+- Pas de quantification ($ \Delta V $) :
   $$
   \Delta V = \frac{\text{Amplitude maximale} - \text{Amplitude minimale}}{2^n}
   $$
-  où $ n \) est le nombre de bits de la quantification.
+  où $ n $ est le nombre de bits de la quantification.
 - Exemple quotidien : En imagerie numérique, la profondeur de couleur (8 bits = 256 niveaux) influence la qualité de l'image.
 
 ### Code Python : Quantification
@@ -136,7 +144,7 @@ La transformée de Fourier (TF) convertit un signal du domaine temporel au domai
 
 ### Série de Fourier
 
-Pour un signal périodique $ s(t) \), la décomposition est donnée par :
+Pour un signal périodique $ s(t) $, la décomposition est donnée par :
 $$
 s(t) = a*0 + \sum*{k=1}^\infty \left( a_k \cos(2 \pi k f_0 t) + b_k \sin(2 \pi k f_0 t) \right)
 $$
@@ -171,8 +179,8 @@ Le filtrage numérique permet d'isoler ou de supprimer certaines fréquences dan
 
 ### Types de filtres
 
-1. Passe-bas : Laisse passer les basses fréquences ($ f < f_c \)).
-2. Passe-haut : Laisse passer les hautes fréquences ($ f > f_c \)).
+1. Passe-bas : Laisse passer les basses fréquences ($ f < f_c $).
+2. Passe-haut : Laisse passer les hautes fréquences ($ f > f_c $).
 3. Passe-bande : Laisse passer une plage de fréquences.
 
 ### Exemple quotidien
