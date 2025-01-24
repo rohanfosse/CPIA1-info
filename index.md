@@ -91,6 +91,15 @@ layout: lesson-content
   font-size: 14px;
 }
 
+.new-alert {
+  border-left: 7px solid #28a745;
+  background-color: #f8f9fa;
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
 /* Footer */
 .footer {
   text-align: center;
@@ -124,7 +133,13 @@ layout: lesson-content
 
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
+<div class="clickable-zones">
 <a href="EI-python.html" class="alert">Cliquez ici pour l'Entrainement et conseils pour l'EI Python</a>
+</div>
+
+<div class="clickable-zones">
+<a href="Courant-alternatif.html" class="new-alert">Cliquez ici la révision du CCTL Courant Alternatif.</a>
+</div>
 
 <div class="clickable-zones">
   <a href="content/00-Excel/01-Cours.html" class="zone" aria-label="Accéder au cours Excel">
