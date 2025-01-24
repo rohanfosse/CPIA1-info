@@ -99,30 +99,30 @@ Les microphones se distinguent par leur principe de fonctionnement, leur mode d�
 
 La conversion des ondes sonores en signaux électriques repose sur différents phénomènes physiques :
 
-- **Effets magnétiques (microphones électrodynamiques)** :
-  - **À bobine mobile** : Utilisés pour leur robustesse et leur capacité à capter des sons forts.
-  - **À ruban** : Sensibles, souvent utilisés en studio.
-- **Effets électrostatiques (microphones électrostatiques)** :
+- Effets magnétiques (microphones électrodynamiques) :
+  - À bobine mobile : Utilisés pour leur robustesse et leur capacité à capter des sons forts.
+  - À ruban : Sensibles, souvent utilisés en studio.
+- Effets électrostatiques (microphones électrostatiques) :
 
-- **À membrane polarisée (condensateurs)** : Offrent une grande précision sonore.
-  - **À membrane pré-polarisée (électrets)** : Compactes et largement répandus.
-- **Effets piézo-électriques (microphones piézoélectriques)** :
-  - **À cristaux (quartz)** : Utilisés pour leur sensibilité élevée.
-  - **À céramiques et polymères** : Adaptés aux applications spécifiques nécessitant une réponse rapide.
+- À membrane polarisée (condensateurs) : Offrent une grande précision sonore.
+  - À membrane pré-polarisée (électrets) : Compactes et largement répandus.
+- Effets piézo-électriques (microphones piézoélectriques) :
+  - À cristaux (quartz) : Utilisés pour leur sensibilité élevée.
+  - À céramiques et polymères : Adaptés aux applications spécifiques nécessitant une réponse rapide.
 
 ##### Par mode d’action du diaphragme
 
-- **En pression** : Sensibles aux variations de pression sonore.
-- **En gradient de pression** : Captent les différences de pression entre deux faces du diaphragme.
-- **Mixte** : Combinaison des deux modes.
+- En pression : Sensibles aux variations de pression sonore.
+- En gradient de pression : Captent les différences de pression entre deux faces du diaphragme.
+- Mixte : Combinaison des deux modes.
 
 ##### Par directivité
 
 La directivité détermine la manière dont le microphone capte les sons en fonction de leur provenance :
 
-- **Omnidirectionnelle** : Capte les sons de toutes les directions.
-- **Bidirectionnelle** : Capte les sons provenant de deux directions opposées.
-- **Unidirectionnelle** : Conçue pour capter principalement les sons provenant d’une direction spécifique (exemples : microphones cardioïdes, supercardioïdes, hypercardioïdes).
+- Omnidirectionnelle : Capte les sons de toutes les directions.
+- Bidirectionnelle : Capte les sons provenant de deux directions opposées.
+- Unidirectionnelle : Conçue pour capter principalement les sons provenant d’une direction spécifique (exemples : microphones cardioïdes, supercardioïdes, hypercardioïdes).
 
 ---
 
@@ -156,9 +156,9 @@ $$
 Gain \, (dB) = 20 \cdot \log\_{10}(H(f))
 $$
 
-où $H(f)$ est le module de la fonction de transfert à une fréquence donnée $f$
+où $$H(f)$$ est le module de la fonction de transfert à une fréquence donnée $$f$$
 
-- Exemple : Si $H(f) = 10$ à une fréquence donnée, alors le gain est :
+- Exemple : Si $$H(f) = 10$$ à une fréquence donnée, alors le gain est :
 
 $$
 20 \cdot \log\_{10}(10) = 20 dB
@@ -205,9 +205,9 @@ Les diagrammes de Fresnel permettent de représenter graphiquement des grandeurs
 
 En régime sinusoïdal, les impédances des composants électriques sont définies par :
 
-- **Résistance ($R$)** : Opposition au courant, indépendante de la fréquence.
-- **Inductance ($L$)** : Impédance $j\omega L$, proportionnelle à la fréquence.
-- **Capacité ($C$)** : Impédance $-j/( \omega C)$, inversement proportionnelle à la fréquence.
+- **Résistance ($$R$$)** : Opposition au courant, indépendante de la fréquence.
+- **Inductance ($$L$$)** : Impédance $j\omega L$, proportionnelle à la fréquence.
+- **Capacité ($$C$$)** : Impédance $-j/( \omega C)$, inversement proportionnelle à la fréquence.
 
 Relation tension-courant :
 
