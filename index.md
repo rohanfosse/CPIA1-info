@@ -133,11 +133,11 @@ layout: lesson-content
 
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
-<div class="clickable-zones">
+<div class="intro-text">
 <a href="EI-python.html" class="alert">Cliquez ici pour l'Entrainement et conseils pour l'EI Python</a>
 </div>
 
-<div class="clickable-zones">
+<div class="intro-text">
 <a href="Courant-alternatif.html" class="new-alert">Cliquez ici la révision du CCTL Courant Alternatif.</a>
 </div>
 
