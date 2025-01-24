@@ -4,6 +4,11 @@ layout: lesson-content
 permalink: /Courant-alternatif.html
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
 ## Rappels des Acquis d'Apprentissages Visés (AAV)
 
 Les AAVs correspondent ici aux attendus des prosits 2 et 3 du projet signal. Ils sont détaillés ci-dessous :
@@ -20,6 +25,26 @@ Les AAVs correspondent ici aux attendus des prosits 2 et 3 du projet signal. Ils
 - [3] Produire un diagramme de Bode
 - [2] Interpréter une courbe de réponse fréquentielle
 - [2] Reconnaître les filtres passe-bas/haut/bande
+
+<!-- TOC -->
+
+---
+
+## Table des matières
+
+1. [Rappels des Acquis d'Apprentissages Visés AAV](#rappels-des-acquis-dapprentissages-vis%C3%A9s-aav)
+2. [Microphones : Fonctionnement et classification](#microphones--fonctionnement-et-classification)
+3. [Traitement des signaux sonores](#traitement-des-signaux-sonores)
+4. [Introduction aux diagrammes de Fresnel](#introduction-aux-diagrammes-de-fresnel)
+5. [Étude pratique : Filtrage de voix humaines](#%C3%A9tude-pratique--filtrage-de-voix-humaines)
+6. [Courant alternatif CA](#courant-alternatif-ca)
+7. [Grandeurs caractéristiques du courant alternatif](#grandeurs-caract%C3%A9ristiques-du-courant-alternatif)
+8. [Grandeurs sinusoïdales](#grandeurs-sinuso%C3%AFdales)
+9. [Différence entre composants actifs et passifs](#diff%C3%A9rence-entre-composants-actifs-et-passifs)
+10. [Les filtres électroniques](#les-filtres-%C3%A9lectroniques)
+11. [Application pratique : Théorème de Millman](#application-pratique--th%C3%A9or%C3%A8me-de-millman)
+
+---
 
 ### Introduction aux composants électroniques
 
@@ -78,7 +103,8 @@ La conversion des ondes sonores en signaux électriques repose sur différents p
   - **À bobine mobile** : Utilisés pour leur robustesse et leur capacité à capter des sons forts.
   - **À ruban** : Sensibles, souvent utilisés en studio.
 - **Effets électrostatiques (microphones électrostatiques)** :
-  - **À membrane polarisée (condensateurs)** : Offrent une grande précision sonore.
+
+- **À membrane polarisée (condensateurs)** : Offrent une grande précision sonore.
   - **À membrane pré-polarisée (électrets)** : Compactes et largement répandus.
 - **Effets piézo-électriques (microphones piézoélectriques)** :
   - **À cristaux (quartz)** : Utilisés pour leur sensibilité élevée.
@@ -240,7 +266,7 @@ Considérons un circuit série contenant une résistance ($R$), une inductance (
 
 ---
 
-#### Application des diagrammes de Fresnel\*\*
+#### Application des diagrammes de Fresnel\*\*\*\*\*
 
 Les diagrammes de Fresnel sont particulièrement utiles pour analyser des circuits en régime alternatif :
 
@@ -337,11 +363,11 @@ La valeur instantanée ($v(t)$, $i(t)$) est la mesure de la tension ou du couran
 
 La valeur maximale atteinte par un signal CA est appelée amplitude ($V_m$, $I_m$).
 
-#### Période ($T$)
+#### Période ()T$)
 
 La période correspond au temps nécessaire pour compléter un cycle complet du signal. Elle est mesurée entre deux points identiques de la courbe.
 
-#### Fréquence ($f$)
+#### Fréquence ()f$)
 
 La fréquence représente le nombre de cycles complets qui se produisent par seconde. Elle est exprimée en hertz (Hz). La relation entre fréquence et période est donnée par :
 
