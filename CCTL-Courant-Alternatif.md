@@ -99,14 +99,13 @@ Les microphones se distinguent par leur principe de fonctionnement, leur mode d�
 
 La conversion des ondes sonores en signaux électriques repose sur différents phénomènes physiques :
 
-- Effets magnétiques (microphones électrodynamiques) :
+- **Effets magnétiques (microphones électrodynamiques)** :
   - À bobine mobile : Utilisés pour leur robustesse et leur capacité à capter des sons forts.
   - À ruban : Sensibles, souvent utilisés en studio.
-- Effets électrostatiques (microphones électrostatiques) :
-
-- À membrane polarisée (condensateurs) : Offrent une grande précision sonore.
+- **Effets électrostatiques (microphones électrostatiques)** :
+  - À membrane polarisée (condensateurs) : Offrent une grande précision sonore.
   - À membrane pré-polarisée (électrets) : Compactes et largement répandus.
-- Effets piézo-électriques (microphones piézoélectriques) :
+- **Effets piézo-électriques (microphones piézoélectriques)** :
   - À cristaux (quartz) : Utilisés pour leur sensibilité élevée.
   - À céramiques et polymères : Adaptés aux applications spécifiques nécessitant une réponse rapide.
 
@@ -161,7 +160,7 @@ où $$H(f)$$ est le module de la fonction de transfert à une fréquence donnée
 - Exemple : Si $$H(f) = 10$$ à une fréquence donnée, alors le gain est :
 
 $$
-20 \cdot \log\_{10}(10) = 20 dB
+20 \cdot \log_{10}(10) = 20 dB
 $$
 
 ---
@@ -206,8 +205,8 @@ Les diagrammes de Fresnel permettent de représenter graphiquement des grandeurs
 En régime sinusoïdal, les impédances des composants électriques sont définies par :
 
 - **Résistance ($$R$$)** : Opposition au courant, indépendante de la fréquence.
-- **Inductance ($$L$$)** : Impédance $j\omega L$, proportionnelle à la fréquence.
-- **Capacité ($$C$$)** : Impédance $-j/( \omega C)$, inversement proportionnelle à la fréquence.
+- **Inductance ($$L$$)** : Impédance $$j\omega L$$, proportionnelle à la fréquence.
+- **Capacité ($$C$$)** : Impédance $$-j/( \omega C)$$, inversement proportionnelle à la fréquence.
 
 Relation tension-courant :
 
@@ -215,7 +214,7 @@ $$
 V = Z \cdot I
 $$
 
-où $V$ est la tension, $I$ le courant, et $Z$ l’impédance complexe.
+où $$V$$ est la tension, $$I$$ le courant, et $$Z$$ l’impédance complexe.
 
 ---
 
@@ -226,7 +225,7 @@ Les diagrammes de Fresnel permettent de représenter les grandeurs en amplitude 
 1. **Établir la loi électrique** :
 
    - Identifier la relation entre les tensions et les courants (loi des nœuds ou des mailles).
-   - Exemple : Dans un circuit RLC série, la tension totale est la somme des tensions aux bornes de $R$, $L$, et $C$.
+   - Exemple : Dans un circuit RLC série, la tension totale est la somme des tensions aux bornes de $$R$$, $$L$$, et $$C$$.
 
 2. **Choisir la grandeur de référence** :
 
@@ -245,24 +244,25 @@ Les diagrammes de Fresnel permettent de représenter les grandeurs en amplitude 
 
 #### Exemple guidé : Circuit RLC série
 
-Considérons un circuit série contenant une résistance ($R$), une inductance ($L$), et une capacité ($C$) :
+Considérons un circuit série contenant une résistance ($$R$$), une inductance ($$L$$), et une capacité ($$C$$) :
 
 1. **Tensions individuelles** :
 
-   - $V_R = I \cdot R$ (en phase avec le courant).
-   - $V_L = j\omega L \cdot I$ (déphasée de $+90^\circ$ ).
-   - $V_C = -j/( \omega C) \cdot I$ (déphasée de $-90^\circ$ ).
+   - $$V_R = I \cdot R$$ (en phase avec le courant).
+   - $$V_L = j\omega L \cdot I$$ (déphasée de $$+90^\circ$$ ).
+   - $$V_C = -j/( \omega C) \cdot I$$ (déphasée de $$-90^\circ$$ ).
 
 2. **Tension totale** :
-
-   - $V\_{total} = V_R + V_L + V_C$
+    $$
+   V\_{total} = V_R + V_L + V_C
+   $$
 
 3. **Tracé du diagramme** :
 
-   - Représentez $V_R$ sur l’axe réel.
-   - Ajoutez $V_L$ perpendiculairement à $V_R$.
-   - Ajoutez $V_C$ dans la direction opposée à $V_L$.
-   - Le vecteur résultant donne $V\_{total}$.
+   - Représentez $$V_R$$ sur l’axe réel.
+   - Ajoutez $$V_L$$ perpendiculairement à $$V_R$$.
+   - Ajoutez $$V_C$$ dans la direction opposée à $$V_L$$.
+   - Le vecteur résultant donne $$V\_{total}$$.
 
 ---
 
@@ -285,13 +285,13 @@ Lors de la captation sonore, les basses fréquences (<60 Hz), souvent générée
 
 #### Solution technique : Utilisation d’un filtre passe-haut
 
-Un **filtre passe-haut** est conçu pour laisser passer les fréquences supérieures à une certaine valeur appelée fréquence de coupure ($f_c$) et atténuer les fréquences inférieures.
+Un **filtre passe-haut** est conçu pour laisser passer les fréquences supérieures à une certaine valeur appelée fréquence de coupure ($$f_c$$) et atténuer les fréquences inférieures.
 
 ##### Choix de la fréquence de coupure
 
 Pour filtrer efficacement les basses fréquences tout en préservant la voix humaine :
 
-- La fréquence de coupure est fixée à $f_c = 60 \, \text{Hz}$, car elle correspond à la limite inférieure des fréquences vocales humaines.
+- La fréquence de coupure est fixée à $$f_c = 60 \, \text{Hz}$$, car elle correspond à la limite inférieure des fréquences vocales humaines.
 
 ##### Conception d’un filtre passe-haut d’ordre 1
 
@@ -314,8 +314,8 @@ $$
 
 ##### Exemple : Conception d’un filtre RC
 
-- Résistance $R = 1 \, \text{k}\Omega$.
-- Capacité $C$ calculée pour $f_c = 60 \, \text{Hz}$ :
+- Résistance $$R = 1 \, \text{k}\Omega$$.
+- Capacité $$C$$ calculée pour $$f_c = 60 \, \text{Hz}$$ :
 
   $$
   C = \frac{1}{2 \pi R f_c} = \frac{1}{2 \pi \cdot 1000 \cdot 60} \approx 2.65 \, \mu\text{F}.
@@ -357,17 +357,17 @@ Le courant alternatif (CA) est un type de courant électrique où la tension et 
 
 #### Valeur instantanée
 
-La valeur instantanée ($v(t)$, $i(t)$) est la mesure de la tension ou du courant à un moment précis. Elle est exprimée comme une fonction du temps.
+La valeur instantanée ($$v(t)$$, $$i(t)$$) est la mesure de la tension ou du courant à un moment précis. Elle est exprimée comme une fonction du temps.
 
 #### Amplitude ou valeur crête
 
-La valeur maximale atteinte par un signal CA est appelée amplitude ($V_m$, $I_m$).
+La valeur maximale atteinte par un signal CA est appelée amplitude ($$V_m$$, $$I_m$$).
 
-#### Période ()T$)
+#### Période $$T$$)
 
 La période correspond au temps nécessaire pour compléter un cycle complet du signal. Elle est mesurée entre deux points identiques de la courbe.
 
-#### Fréquence ()f$)
+#### Fréquence $$f$$)
 
 La fréquence représente le nombre de cycles complets qui se produisent par seconde. Elle est exprimée en hertz (Hz). La relation entre fréquence et période est donnée par :
 
@@ -381,7 +381,7 @@ Une alternance désigne une demi-période du signal, soit positive, soit négati
 
 #### Valeur efficace
 
-La valeur efficace ($V\_{eff}$) est une mesure représentative de l’énergie moyenne du signal. Elle correspond à la valeur de tension ou de courant continu qui produirait le même échauffement dans une résistance :
+La valeur efficace ($$V\_{eff}$$) est une mesure représentative de l’énergie moyenne du signal. Elle correspond à la valeur de tension ou de courant continu qui produirait le même échauffement dans une résistance :
 
 $$
 V_{eff} = \frac{V_m}{\sqrt{2}}
@@ -401,10 +401,10 @@ $$
 
 où :
 
-- $V_m$ : Amplitude (valeur crête).
-- $\omega$ : Pulsation en radians par seconde ($\omega = 2\pi f$).
-- $t$ : Temps.
-- $\alpha$ : Phase initiale.
+- $$V_m$$ : Amplitude (valeur crête).
+- $$\omega$$ : Pulsation en radians par seconde ($$\omega = 2\pi f$$).
+- $$t$$ : Temps.
+- $$\alpha$$ : Phase initiale.
 
 #### Relations fondamentales
 
@@ -454,12 +454,12 @@ Un filtre est un circuit électronique conçu pour modifier le spectre fréquent
 
 1. **Filtre passe-haut** :
 
-   - Laisse passer les fréquences supérieures à une fréquence de coupure ($f_c$).
+   - Laisse passer les fréquences supérieures à une fréquence de coupure ($$f_c$$).
    - Exemple : Atténuation des graves dans un système audio.
 
 2. **Filtre passe-bas** :
 
-   - Laisse passer les fréquences inférieures à $f_c$.
+   - Laisse passer les fréquences inférieures à $$f_c$$.
    - Exemple : Réduction des aigus dans un signal bruité.
 
 3. **Filtre passe-bande** :
@@ -489,20 +489,20 @@ $$
 
 où :
 
-- $V_n$ : Tension au nœud.
-- $G_i = \frac{1}{R_i}$ : Conductance de chaque branche ($R_i$ étant la résistance).
-- $V_i$ : Tension appliquée dans chaque branche.
+- $$V_n$$ : Tension au nœud.
+- $$G_i = \frac{1}{R_i}$$ : Conductance de chaque branche ($$R_i$$ étant la résistance).
+- $$V_i$$ : Tension appliquée dans chaque branche.
 
 #### Exemple d’application
 
 Considérons un circuit avec trois branches :
 
-- Branches avec résistances $R_1 = 1 \, \text{k}\Omega$, $R_2 = 2 \, \text{k}\Omega$, et $R_3 = 3 \, \text{k}\Omega$.
-- Tensions $V_1 = 10 \, \text{V}$, $V_2 = 5 \, \text{V}$, $V_3 = 2 \, \text{V}$.
+- Branches avec résistances $$R_1 = 1 \, \text{k}\Omega$$, $$R_2 = 2 \, \text{k}\Omega$$, et $$R_3 = 3 \, \text{k}\Omega$$.
+- Tensions $$V_1 = 10 \, \text{V}$$, $$V_2 = 5 \, \text{V}$$, $$V_3 = 2 \, \text{V}$$.
 
 **Étapes** :
 
-1. Calculer les conductances $G_1$, $G_2$, et $G_3$.
+1. Calculer les conductances $$G_1$$, $$G_2$$, et $$G_3$$.
 
    $$
    G_1 = \frac{1}{R_1} = \frac{1}{1000} = 0.001 \, \text{S}
