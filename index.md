@@ -159,6 +159,8 @@ body {
   <a href="EI-python.html" class="alert">Cliquez ici pour l'Entrainement et conseils pour l'EI Python</a>
 </div>
 
+<br>
+
 <div class="intro-text">
   <a href="Courant-alternatif.html" class="new-alert">Cliquez ici pour la révision du CCTL Courant Alternatif.</a>
 </div>
