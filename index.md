@@ -162,6 +162,12 @@ body {
 <br>
 
 <div class="intro-text">
+  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet blanc de l'EI, étudié pendant le renforcement.</a>
+</div>
+
+<br>
+
+<div class="intro-text">
   <a href="Courant-alternatif.html" class="new-alert">Cliquez ici pour la révision du CCTL Courant Alternatif.</a>
 </div>
 
