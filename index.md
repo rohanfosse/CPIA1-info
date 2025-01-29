@@ -162,7 +162,8 @@ body {
 <br>
 
 <div class="intro-text">
-  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet étudié pendant le renforcement</a>
+  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet étudié pendant le renforcement.</a>
+  <a href="Renforcement-corrige.html"> La correction est disponible ici.</a>
 </div>
 
 <br>
