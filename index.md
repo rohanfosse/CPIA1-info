@@ -162,7 +162,13 @@ body {
 <br>
 
 <div class="intro-text">
-  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet blanc de l'EI, étudié pendant le renforcement.</a>
+  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet étudié pendant le renforcement</a>
+</div>
+
+<br>
+
+<div class="intro-text">
+  <a href="ExamBlanc-EI.html" class="alert">Cliquez ici pour l'exam blanc de l'EI pour s'entrainer</a>
 </div>
 
 <br>
