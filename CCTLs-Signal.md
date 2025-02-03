@@ -9,11 +9,6 @@ permalink: /CCTL-signal.html
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
 
-## Définitions
-
-Voici la partie **Définitions** complétée avec des termes supplémentaires et des explications plus détaillées.
-
----
 
 ## Définitions
 
