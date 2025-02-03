@@ -4,6 +4,12 @@ layout: lesson-content
 permalink: /CCTL-signal.html
 ---
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
+
 ## Définitions
 
 Avant d’aborder les concepts de modulation et de codage, il est essentiel de définir quelques notions clés :
@@ -11,9 +17,9 @@ Avant d’aborder les concepts de modulation et de codage, il est essentiel de d
 - **Signal** : Une grandeur physique variant en fonction du temps, utilisée pour transmettre de l'information. Les signaux peuvent être électriques, acoustiques ou optiques.
 - **Signal analogique** : Signal continu dans le temps et dans l’amplitude, souvent représenté par une fonction sinusoïdale. Exemple : une onde sonore avec une fréquence de 1 kHz et une amplitude de 2 V.
 - **Signal numérique** : Signal discret, prenant un nombre fini de valeurs. Exemple : un signal binaire avec des niveaux 0V et 5V.
-- **Fréquence (\( f \))** : Nombre d’oscillations par seconde d’un signal périodique, exprimée en Hertz (Hz). Exemple : la fréquence du secteur électrique est de 50 Hz en Europe.
+- **Fréquence ($$ f $$)** : Nombre d’oscillations par seconde d’un signal périodique, exprimée en Hertz (Hz). Exemple : la fréquence du secteur électrique est de 50 Hz en Europe.
 - **Amplitude** : Hauteur du signal, représentant l’intensité de l’onde. Exemple : un signal radio avec une amplitude de 10 mV.
-- **Phase (\( \phi \))** : Décalage temporel d’un signal par rapport à une référence. Exemple : deux signaux sinusoïdaux en quadrature de phase sont décalés de 90°.
+- **Phase ($$ \phi $$)** : Décalage temporel d’un signal par rapport à une référence. Exemple : deux signaux sinusoïdaux en quadrature de phase sont décalés de 90°.
 - **Bande passante** : Plage de fréquences qu’un signal peut occuper. Exemple : une connexion Wi-Fi utilise une bande passante de 20 MHz.
 - **Modulation** : Technique consistant à modifier un signal porteur pour transmettre de l’information. Exemple : la radio FM (modulation de fréquence) utilise une porteuse de 100 MHz.
 - **Démodulation** : Procédé inverse permettant d’extraire l’information du signal modulé. Exemple : un récepteur radio récupère la voix transmise en AM.
@@ -30,13 +36,13 @@ La **modulation** est le processus qui consiste à modifier un signal porteur (u
 
 Mathématiquement, un signal modulé peut être représenté par :
 
-\[ s(t) = A(t) \sin(2 \pi f_c t + \phi(t)) \]
+$$ s(t) = A(t) \sin(2 \pi f_c t + \phi(t)) $$
 
 où :
 
-- \( A(t) \) est l’amplitude du signal modulant,
-- \( f_c \) est la fréquence de la porteuse,
-- \( \phi(t) \) est la phase du signal modulant.
+- $$ A(t) $$ est l’amplitude du signal modulant,
+- $$ f_c $$ est la fréquence de la porteuse,
+- $$ \phi(t) $$ est la phase du signal modulant.
 
 Le choix de la modulation dépend de plusieurs facteurs :
 
@@ -55,9 +61,9 @@ La modulation d’amplitude est une technique de modulation dans laquelle l’am
 - **Principe** : L’amplitude du signal porteur varie en fonction du signal modulant.
 - **Équation mathématique** :
 
-  \[ s\_{AM}(t) = [1 + m \sin(2 \pi f_m t)] \sin(2 \pi f_c t) \]
+  $$ s\_{AM}(t) = [1 + m \sin(2 \pi f_m t)] \sin(2 \pi f_c t) $$
 
-  où \( m \) est l’indice de modulation et \( f_m \) la fréquence du signal modulant.
+  où $$ m $$ est l’indice de modulation et $$ f_m $$ la fréquence du signal modulant.
 
 - **Avantages** : Simple à implémenter, utilisé en radiodiffusion.
 - **Inconvénients** : Sensible aux interférences et inefficace en termes de puissance.
@@ -70,9 +76,9 @@ La modulation de fréquence est une technique de modulation dans laquelle la fr�
 - **Principe** : La fréquence du signal porteur est modifiée selon le signal d’entrée.
 - **Équation mathématique** :
 
-  \[ s\_{FM}(t) = A \sin(2 \pi f_c t + \beta \sin(2 \pi f_m t)) \]
+  $$ s\_{FM}(t) = A \sin(2 \pi f_c t + \beta \sin(2 \pi f_m t)) $$
 
-  où \( \beta \) est l’indice de modulation FM.
+  où $$ \beta $$ est l’indice de modulation FM.
 
 - **Avantages** : Meilleure résistance aux interférences que l’AM.
 - **Inconvénients** : Nécessite une plus grande bande passante.
@@ -85,9 +91,9 @@ La modulation de phase est une technique de modulation dans laquelle la phase du
 - **Principe** : La phase du signal porteur est modifiée proportionnellement au signal modulant.
 - **Équation mathématique** :
 
-  \[ s\_{PM}(t) = A \sin(2 \pi f_c t + k_p m(t)) \]
+  $$ s\_{PM}(t) = A \sin(2 \pi f_c t + k_p m(t)) $$
 
-  où \( k_p \) est un coefficient de modulation en phase.
+  où $$ k_p $$ est un coefficient de modulation en phase.
 
 - **Avantages** : Utilisé en communications numériques (QPSK, PSK, etc.).
 - **Inconvénients** : Plus complexe à mettre en œuvre.
