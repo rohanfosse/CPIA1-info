@@ -9,7 +9,6 @@ permalink: /CCTL-signal.html
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
 
-
 ## Définitions
 
 Avant d’aborder les concepts de modulation et de codage, il est essentiel de définir quelques notions clés :
@@ -412,3 +411,208 @@ Un microphone peut être modélisé comme un système linéaire dont la réponse
 $$ H(f) = \frac{S*{sortie}(f)}{S*{entrée}(f)} $$
 
 Elle permet d’évaluer la qualité de la reproduction sonore et d’optimiser l’utilisation des microphones en fonction des applications.
+
+## Représentation graphiques et codes Python
+
+Voici une série de **graphiques essentiels** qui compléteraient ton cours et faciliteraient la compréhension des concepts abordés.
+
+---
+
+### Représentation d’un signal sinusoïdal (onde périodique)
+
+🎯 **Objectif** : Montrer un signal sinusoïdal typique, utilisé dans la modulation.
+
+#### **Code Python**
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Paramètres du signal
+f = 5  # Fréquence en Hz
+T = 1 / f  # Période
+t = np.linspace(0, 2*T, 1000)  # Axe temporel
+A = 1  # Amplitude
+phi = 0  # Phase initiale
+
+# Signal sinusoïdal
+s = A * np.sin(2 * np.pi * f * t + phi)
+
+# Tracé du signal
+plt.figure(figsize=(8, 4))
+plt.plot(t, s, label=r"$s(t) = A \sin(2\pi f t)$")
+plt.xlabel("Temps (s)")
+plt.ylabel("Amplitude")
+plt.title("Signal sinusoïdal")
+plt.axhline(0, color="black", linewidth=0.5)
+plt.legend()
+plt.grid()
+plt.show()
+```
+
+📌 **Ajout pédagogique** : Expliquer la relation entre **fréquence, période, amplitude et phase**.
+
+---
+
+### Comparaison entre signal analogique et signal numérique
+
+🎯 **Objectif** : Illustrer la différence entre un signal **continu** et un signal **discret** (numérisé).
+
+#### Code Python
+
+```python
+# Création d'un signal analogique
+fs = 100  # Fréquence d'échantillonnage élevée
+t_analog = np.linspace(0, 1, fs*10)  # Signal continu
+signal_analog = np.sin(2 * np.pi * 5 * t_analog)
+
+# Création d'un signal numérique (échantillonné)
+fs_sampled = 10  # Faible fréquence d'échantillonnage
+t_sampled = np.linspace(0, 1, fs_sampled)  # Points échantillonnés
+signal_sampled = np.sin(2 * np.pi * 5 * t_sampled)
+
+# Tracé
+plt.figure(figsize=(8, 4))
+plt.plot(t_analog, signal_analog, label="Signal analogique", linewidth=2)
+plt.stem(t_sampled, signal_sampled, linefmt="r-", markerfmt="ro", basefmt="r", label="Signal numérique")
+plt.xlabel("Temps (s)")
+plt.ylabel("Amplitude")
+plt.title("Signal analogique vs numérique")
+plt.legend()
+plt.grid()
+plt.show()
+```
+
+---
+
+### Modulation d’amplitude (AM)
+
+🎯 **Objectif** : Visualiser la **modulation d’amplitude** en variant l’amplitude d’un signal porteur.
+
+#### Code Python
+
+```python
+# Fréquences
+fc = 50  # Fréquence de la porteuse (Hz)
+fm = 5   # Fréquence du signal modulant (Hz)
+m = 0.5  # Indice de modulation
+
+t = np.linspace(0, 1, 1000)
+signal_modulant = np.sin(2 * np.pi * fm * t)  # Signal d'information
+signal_porteuse = np.sin(2 * np.pi * fc * t)  # Porteuse
+signal_AM = (1 + m * signal_modulant) * signal_porteuse  # Signal AM
+
+# Tracé
+plt.figure(figsize=(8, 4))
+plt.plot(t, signal_AM, label="Signal modulé AM")
+plt.xlabel("Temps (s)")
+plt.ylabel("Amplitude")
+plt.title("Modulation d'Amplitude (AM)")
+plt.legend()
+plt.grid()
+plt.show()
+```
+
+📌 **Ajout pédagogique** : Expliquer l’effet de l’**indice de modulation** sur l’amplitude.
+
+---
+
+### Modulation de fréquence (FM)
+
+🎯 **Objectif** : Observer la **modulation de fréquence** où la fréquence d’un signal porteur est modifiée.
+
+#### Code Python
+
+```python
+from scipy.signal import chirp
+
+# Signal modulant (basse fréquence)
+fm = 5
+t = np.linspace(0, 1, 1000)
+
+# Signal FM
+fc = 50  # Fréquence de la porteuse
+beta = 2  # Indice de modulation
+signal_FM = np.sin(2 * np.pi * fc * t + beta * np.sin(2 * np.pi * fm * t))
+
+# Tracé
+plt.figure(figsize=(8, 4))
+plt.plot(t, signal_FM, label="Signal modulé FM")
+plt.xlabel("Temps (s)")
+plt.ylabel("Amplitude")
+plt.title("Modulation de Fréquence (FM)")
+plt.legend()
+plt.grid()
+plt.show()
+```
+
+### Codage NRZ et Manchester
+
+🎯 **Objectif** : Comparer la **différence entre NRZ et Manchester** dans la transmission binaire.
+
+#### Code Python
+
+```python
+# Données binaires
+data = np.array([1, 0, 1, 1, 0, 0, 1])
+
+# Génération du signal NRZ
+t_nrz = np.repeat(range(len(data)), 2)
+signal_nrz = np.repeat(data, 2)
+
+# Génération du signal Manchester
+t_manchester = np.repeat(range(len(data)), 2)
+signal_manchester = np.hstack([[1, 0] if bit else [0, 1] for bit in data])
+
+# Tracé
+plt.figure(figsize=(8, 6))
+
+# NRZ
+plt.subplot(2, 1, 1)
+plt.step(t_nrz, signal_nrz, where="post", linewidth=2)
+plt.title("Codage NRZ")
+plt.ylim(-0.5, 1.5)
+plt.xticks(range(len(data)))
+plt.grid()
+
+# Manchester
+plt.subplot(2, 1, 2)
+plt.step(t_manchester, signal_manchester, where="post", linewidth=2)
+plt.title("Codage Manchester")
+plt.ylim(-0.5, 1.5)
+plt.xticks(range(len(data)))
+plt.grid()
+
+plt.tight_layout()
+plt.show()
+```
+
+### Transformée de Fourier d’un signal
+
+🎯 **Objectif** : Montrer comment un signal dans le **domaine temporel** peut être analysé en **domaine fréquentiel**.
+
+#### Code Python
+
+```python
+from scipy.fft import fft, fftfreq
+
+# Signal périodique
+fs = 1000  # Fréquence d'échantillonnage
+t = np.linspace(0, 1, fs, endpoint=False)
+signal = np.sin(2 * np.pi * 50 * t) + 0.5 * np.sin(2 * np.pi * 120 * t)  # Signal à 50 Hz et 120 Hz
+
+# Transformée de Fourier
+fft_signal = fft(signal)
+freqs = fftfreq(len(t), 1/fs)
+
+# Tracé
+plt.figure(figsize=(8, 4))
+plt.plot(freqs[:len(freqs)//2], np.abs(fft_signal[:len(freqs)//2]))
+plt.title("Transformée de Fourier d’un signal")
+plt.xlabel("Fréquence (Hz)")
+plt.ylabel("Amplitude")
+plt.grid()
+plt.show()
+```
+
+![alt text](output.png)
