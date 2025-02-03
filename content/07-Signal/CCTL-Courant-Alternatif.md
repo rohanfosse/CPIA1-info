@@ -1,7 +1,8 @@
 ---
-title: "Projet Signal - Courant Alternatif"
-layout: lesson-content
-permalink: /Courant-alternatif.html
+section_id: Signal
+nav_order: 7
+title: CCTL - Courant Alternatif
+topics: Courant; Alternatif; Impédance; Diagrammes de Fresnel; Filtres électroniques
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">

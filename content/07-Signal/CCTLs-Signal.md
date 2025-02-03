@@ -1,8 +1,10 @@
 ---
-title: "CCTLs Signal - Modulation, Démodulation et Codage des Signaux"
-layout: lesson-content
-permalink: /CCTL-signal.html
+section: Signal
+nav_order: 2
+title: CCTLs - Modulation, Démodulation et Codage des Signaux
+topics: Modulation; Codage; Signal
 ---
+
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -420,7 +422,7 @@ Voici une série de **graphiques essentiels** qui compléteraient ton cours et f
 
 ### Représentation d’un signal sinusoïdal (onde périodique)
 
-🎯 **Objectif** : Montrer un signal sinusoïdal typique, utilisé dans la modulation.
+ **Objectif** : Montrer un signal sinusoïdal typique, utilisé dans la modulation.
 
 #### **Code Python**
 
@@ -454,7 +456,7 @@ plt.show()
 
 ### Comparaison entre signal analogique et signal numérique
 
-🎯 **Objectif** : Illustrer la différence entre un signal **continu** et un signal **discret** (numérisé).
+ **Objectif** : Illustrer la différence entre un signal **continu** et un signal **discret** (numérisé).
 
 #### Code Python
 
@@ -485,7 +487,7 @@ plt.show()
 
 ### Modulation d’amplitude (AM)
 
-🎯 **Objectif** : Visualiser la **modulation d’amplitude** en variant l’amplitude d’un signal porteur.
+ **Objectif** : Visualiser la **modulation d’amplitude** en variant l’amplitude d’un signal porteur.
 
 #### Code Python
 
@@ -515,7 +517,7 @@ plt.show()
 
 ### Modulation de fréquence (FM)
 
-🎯 **Objectif** : Observer la **modulation de fréquence** où la fréquence d’un signal porteur est modifiée.
+ **Objectif** : Observer la **modulation de fréquence** où la fréquence d’un signal porteur est modifiée.
 
 #### Code Python
 
@@ -544,7 +546,7 @@ plt.show()
 
 ### Codage NRZ et Manchester
 
-🎯 **Objectif** : Comparer la **différence entre NRZ et Manchester** dans la transmission binaire.
+ **Objectif** : Comparer la **différence entre NRZ et Manchester** dans la transmission binaire.
 
 #### Code Python
 
@@ -585,7 +587,7 @@ plt.show()
 
 ### Transformée de Fourier d’un signal
 
-🎯 **Objectif** : Montrer comment un signal dans le **domaine temporel** peut être analysé en **domaine fréquentiel**.
+ **Objectif** : Montrer comment un signal dans le **domaine temporel** peut être analysé en **domaine fréquentiel**.
 
 #### Code Python
 
