@@ -11,19 +11,86 @@ permalink: /CCTL-signal.html
 
 ## Définitions
 
+Voici la partie **Définitions** complétée avec des termes supplémentaires et des explications plus détaillées.
+
+---
+
+## Définitions
+
 Avant d’aborder les concepts de modulation et de codage, il est essentiel de définir quelques notions clés :
 
-- **Signal** : Une grandeur physique variant en fonction du temps, utilisée pour transmettre de l'information. Les signaux peuvent être électriques, acoustiques ou optiques.
-- **Signal analogique** : Signal continu dans le temps et dans l’amplitude, souvent représenté par une fonction sinusoïdale. Exemple : une onde sonore avec une fréquence de 1 kHz et une amplitude de 2 V.
-- **Signal numérique** : Signal discret, prenant un nombre fini de valeurs. Exemple : un signal binaire avec des niveaux 0V et 5V.
-- **Fréquence ($$ f $$)** : Nombre d’oscillations par seconde d’un signal périodique, exprimée en Hertz (Hz). Exemple : la fréquence du secteur électrique est de 50 Hz en Europe.
-- **Amplitude** : Hauteur du signal, représentant l’intensité de l’onde. Exemple : un signal radio avec une amplitude de 10 mV.
-- **Phase ($$ \phi $$)** : Décalage temporel d’un signal par rapport à une référence. Exemple : deux signaux sinusoïdaux en quadrature de phase sont décalés de 90°.
-- **Bande passante** : Plage de fréquences qu’un signal peut occuper. Exemple : une connexion Wi-Fi utilise une bande passante de 20 MHz.
-- **Modulation** : Technique consistant à modifier un signal porteur pour transmettre de l’information. Exemple : la radio FM (modulation de fréquence) utilise une porteuse de 100 MHz.
-- **Démodulation** : Procédé inverse permettant d’extraire l’information du signal modulé. Exemple : un récepteur radio récupère la voix transmise en AM.
-- **Codage** : Représentation des données pour faciliter leur transmission ou stockage. Exemple : le code ASCII pour la transmission de texte.
-- **Décodage** : Récupération des données originales après transmission. Exemple : un fichier audio MP3 est décodé avant lecture.
+### Généralités sur les signaux
+
+- **Signal** : Une grandeur physique variant en fonction du temps et utilisée pour transmettre de l'information. Les signaux peuvent être électriques, acoustiques, optiques ou électromagnétiques.
+- **Signal analogique** : Signal continu dans le temps et dans l’amplitude, souvent représenté par une fonction sinusoïdale.
+  - **Exemple** : Une onde sonore de 1 kHz et 2 V d’amplitude.
+- **Signal numérique** : Signal discret, prenant un nombre fini de valeurs (généralement binaires : 0 ou 1).
+  - **Exemple** : Un signal binaire avec des niveaux 0V et 5V utilisé dans les circuits logiques.
+
+### Caractéristiques fondamentales d'un signal
+
+- **Fréquence ($$ f $$)** : Nombre d’oscillations d’un signal périodique par seconde, exprimée en Hertz (Hz).
+  - **Exemple** : La fréquence du courant électrique est de 50 Hz en Europe et 60 Hz aux États-Unis.
+- **Période ($$ T $$)** : Durée d’un cycle complet d’un signal périodique. Elle est reliée à la fréquence par la relation :  
+  $$ T = \frac{1}{f} $$
+- **Amplitude ($$ A $$)** : Valeur maximale du signal, représentant son intensité.
+  - **Exemple** : Une onde radio avec une amplitude de 10 mV.
+- **Phase ($$ \phi $$)** : Décalage temporel d’un signal par rapport à une référence. Elle est exprimée en degrés ou en radians.
+  - **Exemple** : Deux signaux sinusoïdaux en quadrature de phase sont décalés de 90°.
+- **Longueur d’onde ($$ \lambda $$)** : Distance parcourue par une onde pendant une période. Elle est définie par :  
+  $$ \lambda = \frac{v}{f} $$  
+  où $$ v $$ est la vitesse de propagation de l’onde.
+  - **Exemple** : Une onde lumineuse de fréquence 500 THz (bleu-vert) a une longueur d’onde d’environ 600 nm dans l’air.
+- **Bande passante** : Plage de fréquences occupée par un signal ou nécessaire à sa transmission.
+  - **Exemple** : Une connexion Wi-Fi en 2,4 GHz utilise une bande passante de 20 MHz.
+
+### Types de signaux et transformations
+
+- **Signal périodique** : Se répète à intervalles réguliers dans le temps.
+  - **Exemple** : Un signal sinusoïdal.
+- **Signal apériodique** : Ne présente pas de répétition régulière.
+  - **Exemple** : Une parole humaine enregistrée.
+- **Signal harmonique** : Signal sinusoïdal de fréquence unique.
+- **Signal composite** : Somme de plusieurs signaux de fréquences différentes (analyse possible via la **transformée de Fourier**).
+- **Spectre d’un signal** : Représentation des fréquences contenues dans un signal.
+
+### Transmission et traitement des signaux
+
+- **Modulation** : Procédé consistant à modifier un signal porteur pour transmettre de l’information.
+  - **Exemple** : La radio FM (modulation de fréquence) utilise une porteuse de 100 MHz.
+- **Démodulation** : Processus inverse permettant d’extraire l’information du signal modulé.
+  - **Exemple** : Un récepteur radio extrait la voix transmise en AM.
+- **Codage** : Conversion des données en un format adapté à la transmission et au stockage.
+  - **Exemple** : L’encodage MP3 pour la compression audio.
+- **Décodage** : Opération inverse du codage permettant de récupérer les données d’origine.
+  - **Exemple** : Un lecteur MP3 décode un fichier audio avant de le restituer.
+- **Échantillonnage** : Conversion d’un signal analogique en une série de valeurs discrètes.
+  - **Théorème de Shannon-Nyquist** : La fréquence d’échantillonnage doit être au moins le double de la fréquence maximale du signal pour éviter le repliement spectral.
+  - **Exemple** : En audio numérique, une fréquence d’échantillonnage de 44,1 kHz est utilisée pour la qualité CD.
+- **Quantification** : Attribution d’une valeur numérique à chaque échantillon d’un signal.
+- **Compression** : Réduction de la taille des données transmises en éliminant certaines informations redondantes.
+  - **Exemple** : Compression vidéo avec le codec H.264.
+
+### Propagation des signaux et interférences
+
+- **Atténuation** : Diminution progressive de l’amplitude d’un signal avec la distance.
+  - **Exemple** : Un signal Wi-Fi devient plus faible à mesure que l’on s’éloigne du routeur.
+- **Distorsion** : Altération de la forme originale d’un signal, pouvant être causée par des effets non linéaires dans un canal de transmission.
+- **Bruit** : Perturbations aléatoires affectant un signal, mesuré par le **rapport signal/bruit (SNR)**.
+  - **Exemple** : Un appel téléphonique en mauvaise qualité à cause d’interférences.
+- **Diaphonie (Crosstalk)** : Perturbation d’un signal par un autre signal voisin dans un câble de transmission.
+- **Interférences** : Superposition de signaux non désirés provenant d’autres sources.
+  - **Exemple** : Un téléphone portable placé près d’une enceinte peut générer des interférences audibles.
+- **Multipath** : Réception multiple d’un même signal en raison de réflexions sur des obstacles.
+  - **Exemple** : Phénomène de trajets multiples dans les communications Wi-Fi.
+
+### Exemples d’applications
+
+- **Téléphonie mobile** : Transmission de la voix sous forme numérique via des ondes radio.
+- **Wi-Fi et Internet** : Communication de données via des ondes électromagnétiques modulées.
+- **Télévision numérique** : Utilisation de la modulation et du codage pour transmettre des images et du son.
+- **GPS** : Positionnement basé sur la réception de signaux synchronisés émis par des satellites.
+- **Radar** : Détection d’objets par analyse de signaux réfléchis.
 
 ---
 
