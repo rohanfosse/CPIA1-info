@@ -9,7 +9,6 @@ permalink: /CCTL-signal.html
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body);"></script>
 
-
 ## Définitions
 
 Avant d’aborder les concepts de modulation et de codage, il est essentiel de définir quelques notions clés :
@@ -207,7 +206,7 @@ def encode_manchester(data):
     encoded = []
     for bit in data:
 
-        encoded.append((0,1) if bit == '1' else (1,0)) # Si le bit est 1, on ajoute (0,1), sinon (1,0) 
+        encoded.append((0,1) if bit == '1' else (1,0)) # Si le bit est 1, on ajoute (0,1), sinon (1,0)
     return encoded
 
 # Fonction de décodage Manchester
@@ -225,3 +224,129 @@ decoded_data = decode_manchester(manchester_signal)
 print("Signal Manchester encodé:", manchester_signal)
 print("Données décodées:", decoded_data)
 ```
+
+## 2. Introduction aux Ondes et aux Signaux
+
+Une **onde** est une perturbation qui se propage dans un milieu (air, eau, vide) en transportant de l’énergie sans transporter de matière. Elle peut être mécanique (ex : son) ou électromagnétique (ex : lumière, radio).
+
+Les ondes jouent un rôle fondamental en transmission d’informations, notamment dans les télécommunications, la radio et les transmissions numériques.
+
+### Types d’ondes
+
+- **Ondes mécaniques** : Nécessitent un milieu pour se propager (ex : ondes sonores dans l’air).
+- **Ondes électromagnétiques** : Se propagent dans le vide (ex : ondes radio, lumière visible).
+
+### Ondes analogiques vs numériques
+
+- **Onde analogique** : Signal continu (ex : voix humaine, signal radio FM).
+- **Onde numérique** : Signal discret (ex : transmission binaire dans un câble Ethernet).
+
+---
+
+## Caractéristiques Physiques des Ondes
+
+Les ondes sont caractérisées par plusieurs grandeurs physiques essentielles :
+
+- **Période (T)** : Durée d’un cycle complet d’une onde (exprimée en secondes, s).
+- **Fréquence (f)** : Nombre de cycles par seconde ($$ f = \frac{1}{T} $$), exprimée en Hertz (Hz).
+- **Pulsation (ω)** : Vitesse angulaire de l’onde ($$ \omega = 2\pi f $$).
+- **Amplitude (A)** : Valeur maximale de l’onde, qui détermine son intensité.
+- **Longueur d’onde (λ)** : Distance parcourue par l’onde pendant une période ($$ \lambda = \frac{v}{f} $$, avec $$ v $$ la vitesse de propagation).
+- **Phase (φ)** : Décalage temporel d’une onde par rapport à une référence.
+
+Exemple : Une onde sonore ayant une fréquence de 440 Hz (note La en musique) a une période de $$ T = \frac{1}{440} \approx 2.27 $$ ms.
+
+---
+
+## Phénomènes de Propagation des Ondes
+
+Lorsqu’une onde se propage, elle interagit avec son environnement, ce qui peut affecter sa transmission. Les principaux phénomènes sont :
+
+### Atténuation
+
+- Perte progressive d’énergie de l’onde avec la distance.
+- Exemple : Le signal Wi-Fi s’affaiblit lorsqu’on s’éloigne du routeur.
+
+### Diffraction
+
+- Capacité d’une onde à contourner un obstacle.
+- Exemple : Une onde sonore peut être entendue derrière un mur alors que la lumière ne passe pas.
+
+### Réflexion
+
+- L’onde rebondit sur une surface selon la loi de Snell ($$ \theta_i = \theta_r $$).
+- Exemple : Un miroir réfléchit la lumière, les antennes paraboliques dirigent les ondes radio.
+
+Ces phénomènes sont essentiels pour comprendre la transmission de signaux et optimiser les communications sans fil.
+
+---
+
+## Représentation Mathématique et Graphique d’un Signal Périodique
+
+Un signal périodique peut être représenté mathématiquement par une fonction sinusoïdale :
+
+$$ s(t) = A \sin(2 \pi f t + \phi) $$
+
+où :
+
+- $$ A $$ est l’amplitude du signal,
+- $$ f $$ est la fréquence en Hz,
+- $$ t $$ est le temps en secondes,
+- $$ \phi $$ est la phase initiale en radians.
+
+### Représentation Graphique
+
+- Utilisation d’outils comme Python/Matplotlib pour tracer des signaux sinusoïdaux.
+- Comparaison entre signaux de différentes fréquences et amplitudes.
+
+---
+
+## Superposition de Signaux et Synthèse de Fourier
+
+La somme de plusieurs signaux périodiques est donnée par :
+
+$$ s(t) = A_1 \sin(2 \pi f_1 t + \phi_1) + A_2 \sin(2 \pi f_2 t + \phi_2) $$
+
+Cette superposition est à la base de la transformée de Fourier, utilisée pour analyser les signaux dans le domaine fréquentiel.
+
+### Application
+
+- Analyse des signaux audio (musique, parole).
+- Traitement du signal en électronique et télécommunications.
+
+---
+
+## Échantillonnage et Conversion Numérique-Analogique
+
+### Théorème de Shannon-Nyquist
+
+Le théorème de l’échantillonnage stipule que pour qu’un signal puisse être entièrement reconstruit, sa fréquence d’échantillonnage $$ f_s $$ doit être au moins deux fois supérieure à la fréquence maximale du signal original :
+
+$$ f*s > 2 f*{max} $$
+
+Ce principe est fondamental en numérisation audio et en transmission numérique.
+
+### Conversion Numérique-Analogique et Inversement
+
+- **Numérisation** : Conversion d’un signal analogique en signal numérique via échantillonnage et quantification.
+- **Reconstruction** : Transformation inverse à l’aide d’un filtre passe-bas.
+
+### Estimation de la Taille d’un Signal Numérisé
+
+La taille d’un fichier audio est déterminée par :
+
+$$ ext{Taille} = f_s \times ext{Résolution} \times ext{Nombre de canaux} \times ext{Durée} $$
+
+Exemple : Un enregistrement en qualité CD (44.1 kHz, 16 bits, stéréo) pour 1 minute :
+
+$$ 44100 \times 16 \times 2 \times 60 = 84.672 ext{ Mo} $$
+
+---
+
+## Fonction de Transfert d’un Microphone
+
+Un microphone peut être modélisé comme un système linéaire dont la réponse en fréquence influence la fidélité du son capté. La **fonction de transfert** $$ H(f) $$ d’un microphone est donnée par :
+
+$$ H(f) = \frac{S*{sortie}(f)}{S*{entrée}(f)} $$
+
+Elle permet d’évaluer la qualité de la reproduction sonore et d’optimiser l’utilisation des microphones en fonction des applications.
