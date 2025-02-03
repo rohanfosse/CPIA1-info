@@ -450,8 +450,6 @@ plt.grid()
 plt.show()
 ```
 
-📌 **Ajout pédagogique** : Expliquer la relation entre **fréquence, période, amplitude et phase**.
-
 ---
 
 ### Comparaison entre signal analogique et signal numérique
@@ -512,8 +510,6 @@ plt.legend()
 plt.grid()
 plt.show()
 ```
-
-📌 **Ajout pédagogique** : Expliquer l’effet de l’**indice de modulation** sur l’amplitude.
 
 ---
 
@@ -615,4 +611,4 @@ plt.grid()
 plt.show()
 ```
 
-![alt text](output.png)
+<img src="output-1.png" alt="Transformée de Fourier d’un signal" class="img-fluid">
