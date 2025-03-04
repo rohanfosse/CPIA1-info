@@ -1,5 +1,5 @@
 ---
-title: "EXAMEN – Simulation et Analyse de Températures Horaires"
+title: "Conception D'algorithmes – Simulation et Analyse de Températures Horaires"
 layout: lesson-content
 permalink: /Rattrapage-Conception.html
 ---
