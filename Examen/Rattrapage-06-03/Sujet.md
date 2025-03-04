@@ -1,4 +1,8 @@
-# **EXAMEN – Simulation et Analyse de Températures Horaires**
+---
+title: "EXAMEN – Simulation et Analyse de Températures Horaires"
+layout: lesson-content
+permalink: /Rattrapage-Conception.html
+---
 
 **Durée :** 1h00
 **Critères d’évaluation :**
@@ -7,8 +11,6 @@
 - Qualité et fonctionnalité du **code Python**
 - Respect des consignes et lisibilité du programme
 - Qualité des courbes générées
-
-**Documents autorisés :** Mémento Python fourni en annexe.
 
 ---
 
@@ -70,13 +72,13 @@ où :
 ## **Partie 3 – Analyse des Données et Visualisation (6 points)**
 
 1. **Personnaliser les graphiques** avec :
-   - Un **titre clair**
-   - Un **axe X représentant les heures de la journée (0 à 23 h) pour la courbe**
-   - Un **axe X représentant des intervalles de température pour l’histogramme**
-   - Un **axe Y représentant les températures en degrés Celsius pour la courbe**
-   - Un **axe Y représentant le nombre d’occurrences pour l’histogramme**
-   - Une **légende pour distinguer les courbes**
-2. **Interpréter visuellement la répartition des températures** grâce à l’histogramme.
+   - Un titre clair
+   - Un axe X représentant les heures de la journée (0 à 23 h) pour la courbe
+   - Un axe X représentant des intervalles de température pour l’histogramme
+   - Un axe Y représentant les températures en degrés Celsius pour la courbe
+   - Un axe Y représentant le nombre d’occurrences pour l’histogramme
+   - Une légende pour distinguer les courbes
+2. Interpréter visuellement la répartition des températures grâce à l’histogramme.
 
 ---
 
