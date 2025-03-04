@@ -5,6 +5,7 @@ permalink: /Rattrapage-Conception.html
 ---
 
 **Durée :** 1h00
+
 **Critères d’évaluation :**
 
 - Clarté et structure du **pseudocode**
@@ -12,13 +13,15 @@ permalink: /Rattrapage-Conception.html
 - Respect des consignes et lisibilité du programme
 - Qualité des courbes générées
 
+Vous pouvez trouver une correction dans le fichier jupyter suivant : [Rattrapage-Conception-Correction.ipynb](Rattrapage-Conception-Correction.ipynb)
+
 ---
 
 ## **Contexte**
 
 Une station météorologique enregistre la **température extérieure** d'une ville **chaque heure pendant 24 heures**.
 
-L’objectif est de concevoir un **algorithme** et un **programme Python** qui :
+L’objectif est de concevoir un **algorithme** (en Pseudo Code) et un **programme Python** qui :
 
 1. **Simule les températures horaires** de la journée.
 2. **Analyse les températures** en trouvant la valeur minimale, maximale et moyenne.
@@ -85,3 +88,5 @@ où :
 ### **Bonus (2 points)**
 
 - Ajouter une option permettant à l’utilisateur de **modifier les limites de génération des températures** pour simuler différentes conditions climatiques.
+
+
