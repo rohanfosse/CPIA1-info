@@ -13,7 +13,7 @@ permalink: /Rattrapage-Conception.html
 - Respect des consignes et lisibilité du programme
 - Qualité des courbes générées
 
-Vous pouvez trouver une correction dans le fichier jupyter suivant : [Rattrapage-Conception-Correction.ipynb](https://jupyter.org/try-jupyter/lab/index.html?path=Rattrapage-Conception-Correction.ipynb)
+Vous pouvez trouver une correction dans le fichier jupyter suivant : [Rattrapage-Conception-Correction.ipynb](Rattrapage-Conception-Correction.ipynb)
 
 ---
 
