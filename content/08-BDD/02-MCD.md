@@ -134,14 +134,8 @@ On obtient :
                                     note
 ```
 
-#### Résumé
+## Ressources
 
-| Étape | Objectif                        | Résultat                                         |
-| ----- | ------------------------------- | ------------------------------------------------ |
-| 1     | Repérer les objets              | `Etudiant`, `Cours`, `Enseignant`                |
-| 2     | Identifier les actions/liaisons | `Inscription`, `Dispense`                        |
-| 3     | Lister les attributs            | Informations propres à chaque entité ou relation |
-| 4     | Évaluer les quantités           | Cardinalités : 1,1 ; 0,n ; 1,n, etc.             |
-
----
-
+- [Merise : méthode de conception de bases de données](https://fr.wikipedia.org/wiki/Merise)
+- [Modèle conceptuel de données (MCD)](https://fr.wikipedia.org/wiki/Mod%C3%A8le_conceptuel_de_donn%C3%A9es)
+- [Exemple d'utilisation du logiciel Looping pour la modélisation de données](https://youtu.be/pcOpVFVknqc)
