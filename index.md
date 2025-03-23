@@ -184,7 +184,7 @@ body {
   </a>
     <a href="content/08-BDD/00-Introduction-SI.md" class="zone" aria-label="Accéder au cours sur la BDD">
     <div class="icon">
-      <img src="images/icon_bdd.png" alt="Icône BDD">
+      <img src="images/bdd.png" alt="Icône BDD">
     </div>
     <p>BDD</p>
   </a>
