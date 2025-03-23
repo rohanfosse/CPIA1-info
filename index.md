@@ -155,28 +155,7 @@ body {
 
 {% include alert.html text="Ce site est en cours de construction. Pensez à revenir régulièrement pour découvrir de nouveaux contenus." type="info" %}
 
-<div class="intro-text">
-  <a href="EI-python.html" class="alert">Cliquez ici pour l'Entrainement et conseils pour l'EI Python</a>
-</div>
-
-<br>
-
-<div class="intro-text">
-  <a href="Renforcement.html" class="alert">Cliquez ici pour le sujet étudié pendant le renforcement.</a>
-  <a href="Renforcement-corrige.html"> La correction est disponible ici.</a>
-</div>
-
-<br>
-
-<div class="intro-text">
-  <a href="ExamBlanc-EI.html" class="alert">Cliquez ici pour l'exam blanc de l'EI pour s'entrainer</a>
-</div>
-
-<br>
-
-<div class="intro-text">
-  <a href="Courant-alternatif.html" class="new-alert">Cliquez ici pour la révision du CCTL Courant Alternatif.</a>
-</div>
+{% include alert.html text="Nouveau contenu : cours sur les bases de données (BDD)." type="new" %}
 
 <div class="clickable-zones">
   <a href="content/00-Excel/01-Cours.html" class="zone" aria-label="Accéder au cours Excel">
@@ -202,6 +181,12 @@ body {
       <img src="images/python.png" alt="Icône Python">
     </div>
     <p>Python</p>
+  </a>
+    <a href="content/08-BDD/00-Introduction-SI.md" class="zone" aria-label="Accéder au cours sur la BDD">
+    <div class="icon">
+      <img src="images/icon_bdd.png" alt="Icône BDD">
+    </div>
+    <p>BDD</p>
   </a>
 </div>
 
