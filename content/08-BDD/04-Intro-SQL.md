@@ -7,8 +7,6 @@ topics: BDD; SQL; SGBD; Requêtes; Données
 
 ## Objectifs pédagogiques
 
-À l’issue de ce cours, l’apprenant sera capable de :
-
 - Comprendre le rôle du langage SQL dans la gestion des bases de données relationnelles.
 - Créer une base de données et des tables avec des contraintes simples.
 - Manipuler les données avec les instructions `SELECT`, `INSERT`, `UPDATE` et `DELETE`.
@@ -270,4 +268,3 @@ DELETE FROM Etudiant;
 
 Cette requête supprime tous les étudiants de la table. Attention à son utilisation !
 
----
