@@ -14,11 +14,23 @@ topics: BDD; SQL; SGBD; Requêtes; Données
 
 ---
 
-## 1. À quoi sert SQL dans l’ingénierie ?
+## 1. À quoi sert SQL ?
+
+### Qu’est-ce que SQL ?
+
+SQL (Structured Query Language) est le **langage standard** utilisé pour gérer les bases de données relationnelles. Il permet :
+
+- De **définir** les structures de stockage (tables, colonnes, clés, contraintes),
+- De **manipuler** les données (insertion, modification, suppression, lecture),
+- De **contrôler** les droits d’accès ou de faire des calculs/statistiques simples.
+
+➡️ SQL est **déclaratif** : on décrit **ce que l’on veut**, pas comment le faire.
+
+### SQL dans l’ingénierie
 
 SQL est omniprésent dans tous les domaines d’ingénierie dès lors que des **données structurées** doivent être stockées, interrogées, croisées ou analysées.
 
-### Exemples par domaine :
+### Exemples par domaine
 
 - **Informatique** : base de données d’utilisateurs, de commandes, de logs, d’applications web, etc.
 - **BTP (Bâtiment et Travaux Publics)** :
@@ -31,19 +43,7 @@ SQL est omniprésent dans tous les domaines d’ingénierie dès lors que des **
 
 ---
 
-## Qu’est-ce que SQL ?
-
-SQL (Structured Query Language) est le **langage standard** utilisé pour gérer les bases de données relationnelles. Il permet :
-
-- De **définir** les structures de stockage (tables, colonnes, clés, contraintes),
-- De **manipuler** les données (insertion, modification, suppression, lecture),
-- De **contrôler** les droits d’accès ou de faire des calculs/statistiques simples.
-
-➡️ SQL est **déclaratif** : on décrit **ce que l’on veut**, pas comment le faire.
-
----
-
-## Les types de données en SQL
+## 2. Les types de données en SQL
 
 SQL propose plusieurs types de données pour stocker des informations :
 
